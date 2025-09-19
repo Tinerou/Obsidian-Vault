@@ -1,16 +1,50 @@
-# Git Commands Guide
+# Git Documentation - Quick Navigation
 
-## Quick Navigation
+## Table of Contents
 
-- [[#Chapter 1 - Setup|Setup & Configuration]]
-- [[#Chapter 2 - Repositories|Working with Repositories]]
-- [[#Chapter 3 - Internals|Internals]]
-- [[#Chapter 5 Branching|Branching Basics]]
-- [[#Chapter 6 Merge|Merging]]
-- [[#Chapter 7 Rebase|Rebasing]]
-- [[#Chapter 9 Remote|Remote Repositories]]
-- [[#Chapter 10 GitHub|GitHub Workflow]]
-- [[#Chapter 11 gitignore|Gitignore Patterns]]
+1. [Setup](#chapter-1---setup)
+    - [Configuration Commands](#configuration-commands)
+2. [Repositories](#chapter-2---repositories)
+    - [Initializing](#initializing-new-repo)
+    - [States & Staging](#states-of-a-git-repo)
+    - [Commits & Log](#commit)
+3. [Internals](#chapter-3-internals)
+    - [Hashes & Objects](#hash--sha)
+    - [Trees & Blobs](#trees-and-blobs)
+4. [Configuration](#chapter-4-configuration)
+    - [Global & Local Config](#updating-global-git-config)
+    - [Config Locations](#locations)
+5. [Branching](#chapter-5-branching)
+    - [Create & Switch](#create-a-branch)
+    - [Log Options](#log-flags)
+6. [Merge](#chapter-6-merge)
+    - [Basic Merge](#merge)
+    - [Fast Forward](#fast-forward-merge)
+7. [Rebase](#chapter-7-rebase)
+    - [Rebase Basics](#rebase)
+    - [Merge vs Rebase](#merge-vs-rebase)
+8. [Reset](#chapter-8-reset)
+    - [Soft & Hard Reset](#reset)
+9. [Remote](#chapter-9-remote)
+    - [Remote Basics](#remote)
+10. [GitHub](#chapter-10-github)
+    - [Push & Pull](#push)
+    - [Pull Requests](#pull-request)
+11. [Gitignore](#chapter-11-gitignore)
+    - [Patterns & Rules](#patterns)
+    - [What to Ignore](#what-to-ignore)
+
+---
+
+**Quick Command Reference:**
+
+- `git status` - Check repo state
+- `git add <file>` - Stage files
+- `git commit -m "message"` - Commit changes
+- `git log --oneline` - View commit history
+- `git switch -c <branch>` - Create & switch to branch
+- `git merge <branch>` - Merge branch
+- `git push origin main` - Push to remote
 
 ---
 
