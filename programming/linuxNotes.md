@@ -1,10 +1,10 @@
 # Command Line Guide
 
 ## ***Quick Navigation***
-### [Chapter 1 - Terminals and Shells](../files/Chapter%201%20-%20Terminals%20and%20Shells.md)
-- [Terminal vs. Shell](../files/Chapter%201%20-%20Terminals%20and%20Shells#Terminal%20vs.%20Shell%7CTerminal%20vs.%20Shell.md)
-- [Variables](../files/Chapter%201%20-%20Terminals%20and%20Shells#Variables%7CVariables.md)
-- [History Commands](../files/Chapter%201%20-%20Terminals%20and%20Shells#History%20Commands%7CHistory%20Commands.md)
+### [[Chapter 1 - Terminals and Shells]]
+- [[Chapter 1 - Terminals and Shells#Terminal vs. Shell|Terminal vs. Shell]]
+- [[Chapter 1 - Terminals and Shells#Variables|Variables]]
+- [[Chapter 1 - Terminals and Shells#History Commands|History Commands]]
 
 ### [[Chapter 2 - Filesystems]]
 - [[Chapter 2 - Filesystems#Navigation Commands|Navigation Commands]]
@@ -43,7 +43,7 @@
 - [[Chapter 6 - Packages#Package Managers|Package Managers]]
 - [[Chapter 6 - Packages#How does package manager work?|How does package manager work?]]
 - [[Chapter 6 - Packages#Webi|Webi]]
-- [Chapter 6 - Packages#lsd (LSDeluxe)|lsd (LSDeluxe)](Chapter%206%20-%20Packages#lsd%20(LSDeluxe)%7Clsd%20(LSDeluxe).md)
+- [[Chapter 6 - Packages#lsd (LSDeluxe)|lsd (LSDeluxe)]]
 ---
 
 ## Quick Reference
