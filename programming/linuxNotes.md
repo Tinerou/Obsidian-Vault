@@ -1,10 +1,10 @@
 # Command Line Guide
 
 ## ***Quick Navigation***
-### [Chapter 1 - Terminals and Shells](Chapter%201%20-%20Terminals%20and%20Shells.md)
-- [Terminal vs. Shell](Chapter%201%20-%20Terminals%20and%20Shells#Terminal%20vs.%20Shell%7CTerminal%20vs.%20Shell.md)
-- [Variables](Chapter%201%20-%20Terminals%20and%20Shells#Variables%7CVariables.md)
-- [History Commands](Chapter%201%20-%20Terminals%20and%20Shells#History%20Commands%7CHistory%20Commands.md)
+### [Chapter 1 - Terminals and Shells](../files/Chapter%201%20-%20Terminals%20and%20Shells.md)
+- [Terminal vs. Shell](../files/Chapter%201%20-%20Terminals%20and%20Shells#Terminal%20vs.%20Shell%7CTerminal%20vs.%20Shell.md)
+- [Variables](../files/Chapter%201%20-%20Terminals%20and%20Shells#Variables%7CVariables.md)
+- [History Commands](../files/Chapter%201%20-%20Terminals%20and%20Shells#History%20Commands%7CHistory%20Commands.md)
 
 ### [[Chapter 2 - Filesystems]]
 - [[Chapter 2 - Filesystems#Navigation Commands|Navigation Commands]]
