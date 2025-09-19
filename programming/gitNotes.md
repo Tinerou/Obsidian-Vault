@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-1. [Setup](#chapter-1---setup)
+1. [Setup](#chapter-1-setup)
     - [Configuration Commands](#configuration-commands)
 2. [Repositories](#chapter-2---repositories)
     - [Initializing](#initializing-new-repo)
@@ -48,7 +48,7 @@
 
 ---
 
-## Chapter 1 - Setup
+## Chapter 1 Setup
 
 Git commands are separated into 2 groups:
 

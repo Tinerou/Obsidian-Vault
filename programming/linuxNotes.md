@@ -1,5 +1,80 @@
 # Command Line Guide
 
+# **Quick Navigation**
+
+## Table of Contents
+
+### [Chapter 1: Terminals and Shells](#chapter-1-terminals-and-shells)
+
+- [Terminal vs. Shell](#terminal-vs-shell)
+- [Variables](#variables)
+- [History Commands](#history-commands)
+
+### [Chapter 2: Filesystems](#chapter-2-filesystems)
+
+- [Navigation Commands](#navigation-commands)
+- [File Viewing Commands](#file-viewing-commands)
+- [File and Directory Creation](#file-and-directory-creation)
+- [File Operations](#file-operations)
+- [Search Commands](#search-commands)
+- [Directory Aliases](#directory-aliases)
+
+### [Chapter 3: Permissions](#chapter-3-permissions)
+
+- [Sudo](#sudo)
+- [Understanding Permissions](#understanding-permissions)
+- [Changing Permissions](#changing-permissions)
+- [Executables](#executables)
+- [Environment Variables](#environment-variables)
+- [PATH Variable](#path-variable)
+
+### [Chapter 5: Input/Output](#chapter-5-inputoutput)
+
+- [Manual Pages](#manual-pages)
+- [Flags](#flags)
+- [Help](#help)
+- [Exit Codes](#exit-codes)
+- [Standard Error](#standard-error)
+- [Standard Output](#standard-output)
+- [Standard Input](#standard-input)
+- [Piping](#piping)
+- [Emergency Commands](#emergency-commands)
+- [Unix Philosophy](#unix-philosophy)
+- [Top](#top)
+
+### [Chapter 6: Packages](#chapter-6-packages)
+
+- [Package Managers](#package-managers)
+- [How Package Managers Work](#how-does-package-manager-work)
+- [Webi](#webi)
+- [lsd (LSDeluxe)](#lsd-lsdeluxe)
+
+---
+
+## Quick Reference
+
+### Essential Navigation
+
+- `pwd` - Show current directory
+- `ls` - List files and directories
+- `cd <path>` - Change directory
+- `cd ..` - Go up one directory
+- `cd` - Go to home directory
+
+### Essential File Operations
+
+- `touch <file>` - Create file
+- `mkdir <dir>` - Create directory
+- `cp <src> <dest>` - Copy file/directory
+- `mv <src> <dest>` - Move/rename file/directory
+- `rm <file>` - Remove file
+- `rm -r <dir>` - Remove directory
+
+### Getting Help
+
+- `man <command>` - View manual page
+- `<command> --help` - Show help for command
+- `which <command>` - Show location of command
 ## Chapter 1: Terminals and Shells
 
 ### Terminal vs. Shell
@@ -371,3 +446,55 @@ Note: You only need to put in file name (NOT the path/to/file)... Don't be like 
 **Controls in `top`:** (May add more here later)
 
 `M` - to sort by memory usage (macOS may have to use `o mem <ENTER>`)
+
+## Chapter 6: Packages
+
+### Package Managers
+
+A package manager is a software tool that helps you install other software. 
+Its primary functions include:
+- Downloading software from official sources
+- Installing software
+- Updating software
+- Removing software
+- Managing dependencies
+
+Examples of these are:
+**APT (Ubuntu)
+Brew (MacOS)**
+
+### How does package manager work?
+
+**When you type a command like `brew install neovim`, the package manager will:**
+1. Check to see if the package is already installed.
+2. If it's not installed, it will download the package from a repository.
+3. It will install the package on your computer.
+4. It will install any dependencies that the package needs to run.
+5. It will (hopefully) add the package to you PATH if it should be there.
+
+**You can see where your package manager installed a program on your filesystem using `which`:**
+```bash
+which <program>
+```
+
+### Webi
+
+Webi lets you install command line tools directly from the web, with no need for a local command line tool like `apt` or `brew`. You don't need to install webi itself at all, instaead you just run a shell command that downloads and runs the tool's official installer script.
+
+To try this out we downloaded lsd (LSDeluxe) a more modern and feature-rich version of `ls`.
+**lsd (LSDeluxe) download
+```bash
+curl -sS https://webi.sh/lsd | sh; \
+source ~/.config/envman/PATH.env
+```
+
+
+### lsd (LSDeluxe)
+
+```bash
+lsd path/to/directory
+```
+
+**Flags:**
+- `--tree` - will show a nice tree file structure. Much like many GUI's
+- `--classic` - classic`ls`/simplified look.
