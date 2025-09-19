@@ -2,10 +2,10 @@
 
 ## Table of Contents
 
-1. [Setup](#chapter-1-setup)
-    - [Configuration Commands](#configuration-commands)
-2. [Repositories](#chapter-2---repositories)
-    - [Initializing](#initializing-new-repo)
+1. [[#Chapter 1 Setup]]
+    - [[#Configuration Commands]]
+2. [[#Chapter 2 Repositories]]
+    - [[#Initializing new repo]]
     - [States & Staging](#states-of-a-git-repo)
     - [Commits & Log](#commit)
 3. [Internals](#chapter-3-internals)
@@ -48,7 +48,7 @@
 
 ---
 
-## Chapter 1 Setup
+## Chapter 1: Setup
 
 Git commands are separated into 2 groups:
 
@@ -102,7 +102,7 @@ bash
 cat ~/.gitconfig
 ```
 
-## Chapter 2 - Repositories
+## Chapter 2: Repositories
 
 ### Initializing new repo:
 

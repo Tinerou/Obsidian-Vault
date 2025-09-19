@@ -1,54 +1,49 @@
 # Command Line Guide
 
-# **Quick Navigation**
+## ***Quick Navigation***
+### [[Chapter 1 - Terminals and Shells]]
+- [[Chapter 1 - Terminals and Shells#Terminal vs. Shell|Terminal vs. Shell]]
+- [[Chapter 1 - Terminals and Shells#Variables|Variables]]
+- [[Chapter 1 - Terminals and Shells#History Commands|History Commands]]
 
-## Table of Contents
+### [[Chapter 2 - Filesystems]]
+- [[Chapter 2 - Filesystems#Navigation Commands|Navigation Commands]]
+- [[Chapter 2 - Filesystems#File Viewing Commands|File Viewing Commands]]
+- [[Chapter 2 - Filesystems#File and Directory Creation|File and Directory Creation]]
+- [[Chapter 2 - Filesystems#File Operations|File Operations]]
+- [[Chapter 2 - Filesystems#Search Commands|Search Commands]]
+- [[Chapter 2 - Filesystems#Directory Aliases|Directory Aliases]]
 
-### [Chapter 1: Terminals and Shells](#chapter-1-terminals-and-shells)
+### [[Chapter 3 - Permissions]]
+- [[Chapter 3 - Permissions#Sudo|Sudo]]
+- [[Chapter 3 - Permissions#Understanding Permissions|Understanding Permissions]]
+- [[Chapter 3 - Permissions#Changing Permissions|Changing Permissions]]
+- [[Chapter 3 - Permissions#Executables|Executables]]
 
-- [Terminal vs. Shell](#terminal-vs-shell)
-- [Variables](#variables)
-- [History Commands](#history-commands)
+### [[Chapter 4 - Networking]] 
+- [[Chapter 4 - Networking#Shebang|Shebang]]
+- [[Chapter 4 - Networking#Shell Configuration|Shell Configuration]]
+- [[Chapter 4 - Networking#Environment Variables|Environment Variables]]
+- [[Chapter 4 - Networking#PATH Variable|PATH Variable]]
 
-### [Chapter 2: Filesystems](#chapter-2-filesystems)
+### [[Chapter 5 - Input and Output]]
+- [[Chapter 5 - Input and Output#Manual Pages|Manual Pages]]
+- [[Chapter 5 - Input and Output#Flags|Flags]]
+- [[Chapter 5 - Input and Output#Help|Help]]
+- [[Chapter 5 - Input and Output#Exit Codes|Exit Codes]]
+- [[Chapter 5 - Input and Output#Standard Error|Standard Error]]
+- [[Chapter 5 - Input and Output#Standard Output|Standard Output]]
+- [[Chapter 5 - Input and Output#Standard In|Standard In]]
+- [[Chapter 5 - Input and Output#Piping|Piping]]
+- [[Chapter 5 - Input and Output#Emergency commands|Emergency commands]]
+- [[Chapter 5 - Input and Output#Unix Philosophy|Unix Philosophy]]
+- [[Chapter 5 - Input and Output#Top|Top]]
 
-- [Navigation Commands](#navigation-commands)
-- [File Viewing Commands](#file-viewing-commands)
-- [File and Directory Creation](#file-and-directory-creation)
-- [File Operations](#file-operations)
-- [Search Commands](#search-commands)
-- [Directory Aliases](#directory-aliases)
-
-### [Chapter 3: Permissions](#chapter-3-permissions)
-
-- [Sudo](#sudo)
-- [Understanding Permissions](#understanding-permissions)
-- [Changing Permissions](#changing-permissions)
-- [Executables](#executables)
-- [Environment Variables](#environment-variables)
-- [PATH Variable](#path-variable)
-
-### [Chapter 5: Input/Output](#chapter-5-inputoutput)
-
-- [Manual Pages](#manual-pages)
-- [Flags](#flags)
-- [Help](#help)
-- [Exit Codes](#exit-codes)
-- [Standard Error](#standard-error)
-- [Standard Output](#standard-output)
-- [Standard Input](#standard-input)
-- [Piping](#piping)
-- [Emergency Commands](#emergency-commands)
-- [Unix Philosophy](#unix-philosophy)
-- [Top](#top)
-
-### [Chapter 6: Packages](#chapter-6-packages)
-
-- [Package Managers](#package-managers)
-- [How Package Managers Work](#how-does-package-manager-work)
-- [Webi](#webi)
-- [lsd (LSDeluxe)](#lsd-lsdeluxe)
-
+### [[Chapter 6 - Packages]]
+- [[Chapter 6 - Packages#Package Managers|Package Managers]]
+- [[Chapter 6 - Packages#How does package manager work?|How does package manager work?]]
+- [[Chapter 6 - Packages#Webi|Webi]]
+- [[Chapter 6 - Packages#lsd (LSDeluxe)|lsd (LSDeluxe)]]
 ---
 
 ## Quick Reference
@@ -240,6 +235,25 @@ chmod u+x program.sh              # Add execute permission for user
 - Text files containing shell commands
 - Run with: `./program.sh` (if in current directory)
 
+## Chapter 4: Programs
+
+### Shebang
+A "shebang" is a special line at the top of a script that tells your shell which program to use to execute files.
+**The format for shebang:**
+```
+#! interpreter [optional-arg]
+```
+For example in python you might use:
+```
+#!/usr/bin/python3
+```
+
+### Shell Configuration
+
+Both Bash and Zsh have configuration files that run automatically each time you start a new shell session. They can be used to set up aliases, functions, and environment variables.
+
+`.bashrc`- if you're using bash
+`zshrc` - if your using zsh
 ### Environment Variables
 
 **View Environment Variables:**
