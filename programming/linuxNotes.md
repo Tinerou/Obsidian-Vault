@@ -358,7 +358,7 @@ Note: You only need to put in file name (NOT the path/to/file)... Don't be like 
 
 ### Unix Philosophy
 
-**IMPORTANT**
+**IMPORTANT:**
 1. Write programs that do one thing and do it well
 2. Write programs to work together
 3. Write programs to handle text streams, because that is  a universal interface
@@ -368,6 +368,6 @@ Note: You only need to put in file name (NOT the path/to/file)... Don't be like 
 `top` a powerful tool that allows you to see which programs are using the most resources on your computer.
 - Much like task manager or Activity Monitor.
 
-**Controls in `top`**
+**Controls in `top`:** (May add more here later)
 
 `M` - to sort by memory usage (macOS may have to use `o mem <ENTER>`)
