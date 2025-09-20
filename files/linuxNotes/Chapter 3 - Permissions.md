@@ -1,3 +1,4 @@
+#linuxNotes
 ### Sudo
 
 - `sudo` = superuser do

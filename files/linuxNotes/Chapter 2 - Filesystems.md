@@ -1,3 +1,4 @@
+#linuxNotes
 ### Navigation Commands
 
 - `pwd` - Print working directory (shows current filepath)

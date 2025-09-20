@@ -1,38 +1,38 @@
 # Git Documentation - Quick Navigation
 
-## Table of Contents
+## **Table of Contents**
 
-1. [[#Chapter 1 Setup]]
-    - [[#Configuration Commands]]
-2. [[#Chapter 2 Repositories]]
-    - [[#Initializing new repo]]
-    - [States & Staging](#states-of-a-git-repo)
-    - [Commits & Log](#commit)
-3. [Internals](#chapter-3-internals)
-    - [Hashes & Objects](#hash--sha)
-    - [Trees & Blobs](#trees-and-blobs)
-4. [Configuration](#chapter-4-configuration)
-    - [Global & Local Config](#updating-global-git-config)
-    - [Config Locations](#locations)
-5. [Branching](#chapter-5-branching)
-    - [Create & Switch](#create-a-branch)
-    - [Log Options](#log-flags)
-6. [Merge](#chapter-6-merge)
-    - [Basic Merge](#merge)
-    - [Fast Forward](#fast-forward-merge)
-7. [Rebase](#chapter-7-rebase)
-    - [Rebase Basics](#rebase)
-    - [Merge vs Rebase](#merge-vs-rebase)
-8. [Reset](#chapter-8-reset)
-    - [Soft & Hard Reset](#reset)
-9. [Remote](#chapter-9-remote)
-    - [Remote Basics](#remote)
-10. [GitHub](#chapter-10-github)
-    - [Push & Pull](#push)
-    - [Pull Requests](#pull-request)
-11. [Gitignore](#chapter-11-gitignore)
-    - [Patterns & Rules](#patterns)
-    - [What to Ignore](#what-to-ignore)
+### [[Chapter 1 - Setup]]
+	- Configuration Commands
+### [[Chapter 2 - Repositories]]
+    - Initializing new repo
+    - States & Staging
+    - Commits & Log
+### [[Chapter 3 - Internals]]
+    - Hashes & Objects
+    - Trees & Blobs
+### [[Chapter 4 - Configuration]]
+    - Global & Local Config
+    - Config Locations
+### [[Chapter 5 - Branching]]
+    - Create & Switch
+    - Log Options
+### [[Chapter 6 - Merge]]
+    - Basic Merge
+    - Fast Forward
+### [[Chapter 7 - Rebase]]
+    - Rebase Basics
+    - Merge vs Rebase
+### [[Chapter 8 - Reset]]
+    - Soft & Hard Reset
+### [[Chapter 9 - Remote]]
+    - Remote Basics
+### [[Chapter 10 - Github]]
+    - Push & Pull
+    - Pull Requests
+### [[Chapter 11 - gitignore]]
+    - Patterns & Rules
+    - What to Ignore
 
 ---
 

@@ -1,4 +1,4 @@
-
+#linuxNotes
 ### Terminal vs. Shell
 
 - **Terminal** = A program that lets you type commands into a window on your computer
