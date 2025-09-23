@@ -1,4 +1,7 @@
 {
   "newFileLocation": "folder",
-  "newFileFolderPath": "files"
+  "newFileFolderPath": "files",
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "files/random",
+  "vimMode": true
 }
