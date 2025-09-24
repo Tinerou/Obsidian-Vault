@@ -1,0 +1,16 @@
+{
+  "uuid": "jhsu191axqrc0dogc1vqll",
+  "gates": {
+    "aHR0cHM6Ly9kZXZoaW50cy5pby92aW0=": {
+      "id": "aHR0cHM6Ly9kZXZoaW50cy5pby92aW0=",
+      "title": "Vim Cheatsheet",
+      "icon": "<svg viewBox=\"0 0 100 100\"><image href=\"https://icon.horse/icon/devhints.io\" height=\"100\" width=\"100\" /></svg>",
+      "hasRibbon": true,
+      "position": "right",
+      "profileKey": "open-gate",
+      "url": "https://devhints.io/vim",
+      "zoomFactor": 1,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/117.0/HBpt3US8-18"
+    }
+  }
+}
