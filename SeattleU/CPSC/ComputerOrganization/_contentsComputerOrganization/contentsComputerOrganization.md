@@ -7,4 +7,18 @@
 - [[ch0_intro_CPSC2500#Syllabus|Syllabus]]
 
 # [[Unit 1 - Data Representation]]
-- 
+
+- ## [[Unit 1 - Data Representation#1.1 - Binary Numbers|1.1 - Introduction to Data Representation]]
+
+	- [[Unit 1 - Data Representation#Bits and Bytes]]	
+	- [[Unit 1 - Data Representation#Base-10 Numbers]]
+	- [[Unit 1 - Data Representation#Converting Decimal Numbers into Binary]]
+	- [[Unit 1 - Data Representation#Hexadecimal Numbers]]
+	- [[Unit 1 - Data Representation#Binary Addition]]
+	- [[Unit 1 - Data Representation#Character Representation]]
+	- [[Unit 1 - Data Representation#Image Representation]]
+	- [[Unit 1 - Data Representation#Sound Representation]]
+
+- ## [[1.2 - Two's Complement Integers]]
+
+	- 
