@@ -6,19 +6,28 @@
 - [[ch0_intro_CPSC2500#Course Overview|Course Overview]]
 - [[ch0_intro_CPSC2500#Syllabus|Syllabus]]
 
-# [[Unit 1 - Data Representation]]
+# Unit 1 - Data Representation
 
-- ## [[Unit 1 - Data Representation#1.1 - Binary Numbers|1.1 - Introduction to Data Representation]]
+- ## [[1.1 - Binary Numbers#1.1 - Binary Numbers|1.1 - Introduction to Data Representation]]
 
-	- [[Unit 1 - Data Representation#Bits and Bytes]]	
-	- [[Unit 1 - Data Representation#Base-10 Numbers]]
-	- [[Unit 1 - Data Representation#Converting Decimal Numbers into Binary]]
-	- [[Unit 1 - Data Representation#Hexadecimal Numbers]]
-	- [[Unit 1 - Data Representation#Binary Addition]]
-	- [[Unit 1 - Data Representation#Character Representation]]
-	- [[Unit 1 - Data Representation#Image Representation]]
-	- [[Unit 1 - Data Representation#Sound Representation]]
+	- [[1.1 - Binary Numbers#Bits and Bytes|Bits and Bytes]]	
+	- [[1.1 - Binary Numbers#Base-10 Numbers|Base-10 Numbers]]
+	- [[1.1 - Binary Numbers#Converting Decimal Numbers into Binary|Converting Decimal Numbers into Binary]]
+	- [[1.1 - Binary Numbers#Hexadecimal Numbers|Hexadecimal Numbers]]
+	- [[1.1 - Binary Numbers#Binary Addition|Binary Addition]]
+	- [[1.1 - Binary Numbers#Character Representation|Character Representation]]
+	- [[1.1 - Binary Numbers#Image Representation|Image Representation]]
+	- [[1.1 - Binary Numbers#Sound Representation|Sound Representation]]
 
 - ## [[1.2 - Two's Complement Integers]]
 
-	- 
+	- ### [[1.2 - Two's Complement Integers#Fixed Length Integers and Overflow|Fixed Length Integers and Overflow]]
+		- [[1.2 - Two's Complement Integers#Fixed Length Integers|Fixed Length Integers]]
+		- [[1.2 - Two's Complement Integers#Overflow|Overflow]]
+	- ### [[1.2 - Two's Complement Integers#Two's Complement Numbers|Two's Complement Numbers]]
+		- [[1.2 - Two's Complement Integers#Positive to Negative value|Positive to Negative Value]]
+		- [[1.2 - Two's Complement Integers#Negative to Positive value|Negative to Positive Value]]
+		- [[1.2 - Two's Complement Integers#Addition|Addition]]
+		- [[1.2 - Two's Complement Integers#Two's Complement Overflow|Two's Complement Overflow]]
+		- [[1.2 - Two's Complement Integers#Other Arithmetic Operations|Other Arithmetic Operations]]
+- ## [[1.3 - Floating-Point Numbers]]

@@ -1,4 +1,4 @@
-
+#PhilOfTheHP
 ## On discussion day we talk about:
 - The phenomenon of consciousness
 - Reductionism in neuroscience
