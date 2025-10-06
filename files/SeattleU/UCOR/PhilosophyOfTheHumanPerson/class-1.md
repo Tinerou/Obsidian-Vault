@@ -26,7 +26,7 @@ Remembering
 ### Physicalism: Everything is physical
 
 Prompt 1:
-Note: Maybe write essay about "soul" when talking about scientific knowledge and religious beliefs. Can things in that cannot be explained by science real? (cognitive dissinance in Nagel bat)
+Note: Maybe write essay about "soul" when talking about scientific knowledge and religious beliefs. Can things in that cannot be explained by science real? (cognitive dissonance in Nagel bat)
 Prompt 2: What is free will? Blackhole alternate reality theory. Different definitions for different people. If events/experiences shape us are we in control of what shapes us? 
 ### Scientific Method
 
