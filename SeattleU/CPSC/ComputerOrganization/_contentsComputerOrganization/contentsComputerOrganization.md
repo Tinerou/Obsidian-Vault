@@ -30,6 +30,7 @@
 		- [[1.2 - Two's Complement Integers#Addition|Addition]]
 		- [[1.2 - Two's Complement Integers#Two's Complement Overflow|Two's Complement Overflow]]
 		- [[1.2 - Two's Complement Integers#Other Arithmetic Operations|Other Arithmetic Operations]]
+	
 - ## [[1.3 - Floating-Point Numbers]]
 
 	- ### [[1.3 - Floating-Point Numbers#Floating-Point Number Representation|Floating-Point Number Representation]]
@@ -45,5 +46,17 @@
 	- ### [[1.3 - Floating-Point Numbers#Additional Arithmetic|Additional Arithmetic]]
 		- [[1.3 - Floating-Point Numbers#Floating-Point Addition|Floating-Point Addition]]
 		- [[1.3 - Floating-Point Numbers#Floating-Point Multiplication|Floating-Point Multiplication]]
+		
 - ## [[Unit 1 Extras]]
 	- [[Unit 1 Extras#Worksheet|Worksheet]]
+
+# Unit 2 - Digital Logic
+
+- ## [[2.1 - Logic Gates and Circuits]]
+	- [[2.1 - Logic Gates and Circuits#Boolean Algebra|Boolean Algebra]]
+	- [[2.1 - Logic Gates and Circuits#Logic Gates|Logic Gates]]
+	- [[2.1 - Logic Gates and Circuits#Sum-of-Products Form|Sum-of-Products Form]]
+	- [[2.1 - Logic Gates and Circuits#Designing Logical Circuits|Designing Logic Circuits]]
+	- [[2.1 - Logic Gates and Circuits#Multiplexers and Decoders|Multiplexers and Decoders]]
+
+
