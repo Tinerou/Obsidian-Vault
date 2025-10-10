@@ -1,4 +1,5 @@
 Note: In the industry we avoid recursion to avoid unwanted bugs
+
 **What is recursion?:**
 1) Repeat same task (smaller) - With same function call
 2) "Stop sign" / base case / anchor case
@@ -60,5 +61,70 @@ int find_max(Node* head, int i) {
 int find_max(Node* head) {
 	if(!head) return INT_MIN; // If head is null
 	return max(head->data, find_max(head->next));
+}
+```
+
+**Recursion**
+
+```C++
+binarySearch(int array, int low, int high, int target) {
+  // base case
+  if (low > high) return -1;
+  // recursive step
+  int mid = low + (high-low)/2;
+  if (target == A[mid]) {
+    return mid;
+  }
+  // solve smaller sub-problems
+  if (target < A[mid])
+    return binarySearch(A, low, mid-1, target);
+  return binarySearch(A, mid+1, high, target);
+}
+```
+
+**Permutation**
+```C++
+
+void permutation(int arr[], bool used[], int n, int i, int permu[]) {
+
+  // base case
+  if (i == n) {
+    for (int k = 0; k < n; k++) {
+      std::cout << permu[k] << " ";
+    }
+    std::cout << std::endl;
+    return;
+  }
+  
+  // recursive step
+  // find an unused integer and put it into our current permutation 
+  for(int k = 0; k < n; k++) {
+    if (used[k]) continue;
+    used[k] = true;
+    permu[i] = arr[k];
+    permutation(arr, n, used, permu, i+1);
+    used[k] = false;
+  }
+}
+```
+
+**Subset**
+```C++
+void subset(int A[], int n, int i, int j, int S[]) {
+
+  // base case
+  if (i == n) {
+    for (int k = 0; k < j; k++) {
+      std::cout << S[k] << " ";
+    }
+    std::cout << endl;
+    return;
+  }
+
+  // Recursive step: examining A[]
+  // int j is the size of A[]
+  subset(A, n, i+1, j, S);
+  S[j] = A[i];
+  subset(A, n, i+1, j+1, S);
 }
 ```

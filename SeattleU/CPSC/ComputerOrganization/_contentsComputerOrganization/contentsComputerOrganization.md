@@ -58,5 +58,11 @@
 	- [[2.1 - Logic Gates and Circuits#Sum-of-Products Form|Sum-of-Products Form]]
 	- [[2.1 - Logic Gates and Circuits#Designing Logical Circuits|Designing Logic Circuits]]
 	- [[2.1 - Logic Gates and Circuits#Multiplexers and Decoders|Multiplexers and Decoders]]
+- ## [[2.2 - Digital Logic in CPUs]]
+	- [[2.2 - Digital Logic in CPUs#Von Neumann Model|Von Neumann Model]]
+	- [[2.2 - Digital Logic in CPUs#Adders|Adders]]
+	- [[2.2 - Digital Logic in CPUs#Arithmetic Logic Unit (ALU)|Arithmetic Logic Unit (ALU)]]
+	- [[2.2 - Digital Logic in CPUs#Shifter|Shifter]]
+	- [[2.2 - Digital Logic in CPUs#Comparisons|Comparisons]]
 
 
