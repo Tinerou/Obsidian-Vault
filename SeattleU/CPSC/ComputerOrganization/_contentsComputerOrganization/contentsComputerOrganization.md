@@ -64,5 +64,10 @@
 	- [[2.2 - Digital Logic in CPUs#Arithmetic Logic Unit (ALU)|Arithmetic Logic Unit (ALU)]]
 	- [[2.2 - Digital Logic in CPUs#Shifter|Shifter]]
 	- [[2.2 - Digital Logic in CPUs#Comparisons|Comparisons]]
-
+- ## [[2.3 Sequential Logic and Memory]]
+	- [[2.3 Sequential Logic and Memory#Introduction to Sequential Logic|Intro to Sequential Logic]]
+	- [[2.3 Sequential Logic and Memory#Latches and flip-flops|Latches and flip-flops]]
+	- [[2.3 Sequential Logic and Memory#Buses|Buses]]
+	- [[2.3 Sequential Logic and Memory#Memory Organization|Memory Organization]]
+- ## [[2.4 - Finite State Machines]]
 

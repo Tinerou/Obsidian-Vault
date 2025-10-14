@@ -67,18 +67,20 @@ int find_max(Node* head) {
 **Recursion**
 
 ```C++
-binarySearch(int array, int low, int high, int target) {
-  // base case
-  if (low > high) return -1;
-  // recursive step
-  int mid = low + (high-low)/2;
-  if (target == A[mid]) {
-    return mid;
+int binarySearch(int A[], int low, int high, int target) {
+  // base case (fail)
+  if(low > high) return -1;
+  // setup
+  int mid = low+((high-low)/2);
+  // recursive function
+  if(target < A[mid]) {
+    return binaryS(A, low, mid-1, target);
   }
-  // solve smaller sub-problems
-  if (target < A[mid])
-    return binarySearch(A, low, mid-1, target);
-  return binarySearch(A, mid+1, high, target);
+  if(target > A[mid]) {
+    return binaryS(A, mid+1, high, target);
+  }
+  // base case (success)
+  return mid;
 }
 ```
 
