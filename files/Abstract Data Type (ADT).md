@@ -24,8 +24,51 @@ public:
 	std::ostream& operator<<(std::ostream& out, const List& list);  
 #endif
 ```
-**ADT: List**
+### **Static Array:** list.cpp
+```C++
+#include<iostream>
+#include"list.h"
 
+List::List() : count(0) {}
+
+bool List::empty() {
+  return !count;
+}
+
+bool List::insert(ElementType x, int pos) {
+  if(pos < 0 || pos > count || count >= SIZE) return false;
+  for(int i = count; i > pos; i--) {
+    arr[i] = arr[i-1];
+  }
+  arr[pos] = x;
+  count++;
+  return true;
+}
+
+bool List::erase(int pos) {
+  if(pos < 0 || pos >= count) return false;
+  for(int i = pos+1; i<count; i++) {
+    arr[i-1] = arr[i];
+  }
+  count--;
+  return true;
+}
+
+void List::display(std::ostream& out) const {
+  for (int i = 0; i < count; i++) {
+    out << arr[i] << std::endl;
+  }
+}
+
+std::ostream& operator<<(std::ostream& out, const List& list) {
+  list.display(out);
+  return out;
+}
+```
+### **Dynamic Array:** list.h
+```C++
+
+```
 Static Array:
 - Pros: 
 	- simple
@@ -79,6 +122,84 @@ Cons:
 - Somewhat complex: destructor, copy constructor, assignment operator
 - No direct access to each element
 - Access of the *n*th item is now less efficient
+```C++
+class SinglyLinkedList {
+private:
+  struct Node {
+    int data;
+    Node* next;
+    Node(int data, Node* next=nullptr) {
+      this->data = data;
+      this->next = next;
+    }
+  };
+  int n; // size counter
+  Node* head;
+public:
+  SinglyLinkedList() {
+    n = 0;
+    head = nullptr;
+  }
+  SinglyLinkedList(const int& data) {
+    n = 0;
+    head = nullptr;
+    insert(data);
+  }
+  SinglyLinkedList(const SinglyLinkedList& other) {
+    n = 0;
+    Node* temp = other.head;
+    for(int i = 0; i < other.size(); i++) {
+      insert(temp->data);
+      temp = temp->next;
+    }
+  }
+  ~SinglyLinkedList() {
+    while(!empty()) {
+      remove();
+    }
+  }
+
+  SinglyLinkedList& operator=(const SinglyLinkedList& other) {
+    if(this == &other) return *this;
+    while(!empty()) {
+      remove();
+    }
+    Node* temp = other.head;
+    for(int i = 0; i < other.size(); i++) {
+      insert(temp->data);
+      temp = temp->next;
+    }
+    return *this;
+  }
+  void insert(const int& data) {
+    head = new Node(data, head);
+    n++;
+  }
+  void remove() {
+    if(!empty()) {
+      Node* temp = head;
+      head = head->next;
+      delete temp;
+      n--;
+    }
+  }
+  bool empty() const {
+    return !n;
+  }
+  int size() const {
+    return n;
+  }
+  void swapPair(Node* head) {
+    if(head == nullptr || head->next == nullptr) return;
+    int temp = head->next->data;
+    head->next->data = head->data;
+    head->data = temp;
+    swapPair(head->next->next);
+  }
+  
+};
+
+```
 
 ### Doubly-linked list
 

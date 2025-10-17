@@ -87,11 +87,11 @@ int binarySearch(int A[], int low, int high, int target) {
 **Permutation**
 ```C++
 
-void permutation(int arr[], bool used[], int n, int i, int permu[]) {
+void permutation(int arr[], bool used[], int size, int index, int permu[]) {
 
   // base case
-  if (i == n) {
-    for (int k = 0; k < n; k++) {
+  if (index == size) {
+    for (int k = 0; k < size; k++) {
       std::cout << permu[k] << " ";
     }
     std::cout << std::endl;
@@ -100,11 +100,11 @@ void permutation(int arr[], bool used[], int n, int i, int permu[]) {
   
   // recursive step
   // find an unused integer and put it into our current permutation 
-  for(int k = 0; k < n; k++) {
+  for(int k = 0; k < size; k++) {
     if (used[k]) continue;
     used[k] = true;
-    permu[i] = arr[k];
-    permutation(arr, n, used, permu, i+1);
+    permu[index] = arr[k];
+    permutation(arr, size, used, permu, index+1);
     used[k] = false;
   }
 }

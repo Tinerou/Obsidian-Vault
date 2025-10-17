@@ -1,3 +1,4 @@
+
 # [[ch0_intro_CPSC2500|Chapter 0 - Intro]]
 
 - [[ch0_intro_CPSC2500#Computers and Programs|Computers and Programs]]
@@ -70,4 +71,12 @@
 	- [[2.3 Sequential Logic and Memory#Buses|Buses]]
 	- [[2.3 Sequential Logic and Memory#Memory Organization|Memory Organization]]
 - ## [[2.4 - Finite State Machines]]
+	- [[2.4 - Finite State Machines#Finite Machines|Finite Machines]]
+	- [[2.4 - Finite State Machines#Vending Machine Example|Vending Machine Example]]
+
+# Unit 3 - Assembly Language Part I
+
+- ## [[3.1 - Introduction to Assembly Language]]
+- 
+
 
