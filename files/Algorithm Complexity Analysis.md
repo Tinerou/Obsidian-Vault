@@ -46,13 +46,13 @@ $\theta \omega$
 Big O proofs:
 
 Prove: $T(n) = 100n+logn$
-$T(n) <= 100n+n$
-Because $n>=logn$
+$T(n) \leq 100n+n$
+Because $n\geq logn$
 $=101*n$
 $=c*f(n)$
 So,
-$c*f(n) >= T(n)$
-Therefore, $O(n) >= T(n)$ 
+$c*f(n) \geq T(n)$
+Therefore, $O(n) \geq T(n)$ 
 
 $T(n)=7n-2$
 $T(n) <= 7n +n$

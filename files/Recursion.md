@@ -1,5 +1,6 @@
 Note: In the industry we avoid recursion to avoid unwanted bugs
 
+## In class
 **What is recursion?:**
 1) Repeat same task (smaller) - With same function call
 2) "Stop sign" / base case / anchor case
@@ -130,3 +131,36 @@ void subset(int A[], int n, int i, int j, int S[]) {
   subset(A, n, i+1, j+1, S);
 }
 ```
+
+
+## Textbook
+
+**Drawing an english Ruler**
+``` C++
+// one tick (customizable label)
+void drawOneTick(int tickLength, int tickLabel = -1) {
+	for (int i - 0; i < tickLength; i++) 
+		std::cout << "-";
+	if (tickLabel >= 0) std::cout << " " << tickLabel;
+	std::cout << '\n'
+}
+// draw ticks of given length
+void drawTicks(int tickLength) {
+	if (tickLength > 0) {
+		drawTicks(tickLength-1);
+		drawOneTick(tickLength);
+		drawTicks(tickLength-1);
+	}
+}
+// draw entire ruler
+void drawRuler(int nInches, int majorLength) {
+	drawOneTick(majorLength, 0);
+	for (int i = 1; i <= nInches; i++) {
+		drawTicks(majorLength-1);
+		drawOneTick(majorLength, i);
+	}
+}
+```
+
+
+

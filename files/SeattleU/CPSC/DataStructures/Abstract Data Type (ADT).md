@@ -1,3 +1,4 @@
+#DataStructures 
 ### **Static Array:** list.h
 ``` C++
 #ifndef _LIST_H  
@@ -67,7 +68,97 @@ std::ostream& operator<<(std::ostream& out, const List& list) {
 ```
 ### **Dynamic Array:** list.h
 ```C++
+#ifndef LIST_H
+#define LIST_H
+#include<iostream>
 
+typedef int ElementType;
+class List {
+private:
+  ElementType* arr;
+  int count, size;
+public:
+  List(int c = 10);
+  ~List();
+  List(const List& other);
+  const List& operator=(const List& other);
+  bool empty() const;
+  bool insert(ElementType x, int pos);
+  bool erase(int pos);
+  void display(std::ostream& out) const;
+};
+std::ostream& operator<<(std::ostream& out, const List& list);
+
+#endif
+```
+### **Dynamic Array:** list.cpp
+```C++
+#include"list.h"
+#include<iostream>
+
+List::List(int c) : size(c) {
+  count = 0;
+  arr = new ElementType[size];
+}
+
+List::~List() {
+  delete[] arr;
+}
+
+List::List(const List& other) {
+  count = 0;
+  size = other.size;
+  arr = new ElementType[size];
+  for(int i = 0; i < other.count; i++) {
+    insert(other.arr[i], i);
+  }
+}
+
+const List& List::operator=(const List& other) {
+  if(this == &other) return *this;
+  delete[] arr;
+  count = 0;
+  size = other.size;
+  arr = new ElementType[size];
+  for (int i = 0; i < other.count; i++) {
+    insert(other.arr[i], i);
+  }
+  return *this;
+}
+
+bool List::empty() const {
+  return !count;
+}
+
+bool List::insert(ElementType x, int pos) {
+  if(pos < 0 || pos > count || count >= size) return false;
+  for(int i = count; i > pos; i--) {
+    arr[i] = arr[i-1];
+  }
+  arr[pos] = x;
+  count++;
+  return true;
+}
+
+bool List::erase(int pos) {
+  if(pos < 0 || pos >= count) return false;
+  for(int i = pos; i < count-1; i++) {
+    arr[i] = arr[i+1];
+  }
+  count--;
+  return true;
+}
+
+void List::display(std::ostream& out) const {
+  for(int i = 0; i < count; i++) {
+    out << arr[i] << std::endl;
+  }
+}
+
+std::ostream& operator<<(std::ostream& out, const List& list) {
+  list.display(out);
+  return out;
+}
 ```
 Static Array:
 - Pros: 
@@ -91,7 +182,7 @@ Dynamic Array:
 - Data structures (containers)
 - Algorithms
 
-### Linked List
+## Linked List
 
 Contents: 
 - Data - stores an element of the list
