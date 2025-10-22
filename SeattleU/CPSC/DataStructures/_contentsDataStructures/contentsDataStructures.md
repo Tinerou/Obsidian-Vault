@@ -4,6 +4,7 @@
 [[Recursion]]
 [[Algorithm Complexity Analysis]]
 [[Trees]]
+[[Binary Search Trees (BST)]]
 
 # Homework
 [[hw1]]

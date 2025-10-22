@@ -33,14 +33,6 @@ $$\begin{align}
 \end{align}$$
 
 
-
-
-
-
-
-
-
-
 $\theta \omega$ 
 
 Big O proofs:
@@ -146,3 +138,4 @@ T(n/2^2) = T(n/2^2)+1
 T(2) = T(1)/2
 T(1) = T(0)/2
 $O(\log n)$
+

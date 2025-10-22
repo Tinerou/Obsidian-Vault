@@ -1,4 +1,6 @@
 
+#### Plain text 
+`\text{Hi, here is some math}`
 #### Relation operators
 https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols
 

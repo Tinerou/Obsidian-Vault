@@ -1,5 +1,6 @@
 Recursive data structure
 
+Learn DFS algorithm
 ## In class
 
 Trees are everywhere: 
@@ -121,3 +122,84 @@ void get_height(Node* root) {
 	- B+ tree
 	- 2-3 tree
 - Many others
+
+*preorder:* me→left→right
+*inorder:* left→me→right
+*postorder:* left→right→me
+Note: These are the most common but you can do others
+
+inorder: 3, 24, 9, 10, 5, 12, 99, 78
+postorder: 3, 10, 9, 5, 24, 78, 99, 12
+
+```C++
+void preorder(Node* root) {
+	if (!root) return;
+	std::cout << root->data << ' ';
+	preorder(root->left);
+	preorder(root->right);
+}
+```
+
+```C++
+void inorder(Node* root) {
+	if(!root) return;
+	inorder(root->left);
+	std::cout << root->data;
+	inorder(root->right);
+}
+```
+
+```C++
+void postorder(Node* root) {
+	if(!root) return;
+	postorder(root->left);
+	postorder(root->right);
+	std::cout << root->data << ' ';
+}
+```
+
+Find the lowest common ancestor (LCA) of two nodes on a tree
+```C++
+// This will require backtracking
+// Ask parent if it has p and q
+// Base case 1: if no parent return current
+// Base case 2: if parent contains the 2 nodes return parent
+// Is current the main root?
+Node* lca(Node* p, Node* q, Node* root, bool& found_p, bool& found_q) {
+	//base case
+	if (!root) return NULL;
+	Node* left = lca(p, q, root->left, found_p, found_q);
+	if(left) return left;
+	// If no answer proceed to right subtree
+	Node* right = lca(p, q, root->right, found_p, found_q);
+	if(right) return right;
+	found_p 1 = (root==p); // bit operator
+	found_q 1 = (root==q);	
+	if(found_p && found_q) return root;
+	// If you don't know
+	return NULL;
+}
+```
+## Textbook Notes
+
+*"Breakthroughs come by thinking 'nonlinearly' "*
+
+### 7.1 - General Trees
+
+#### 7.1.1 - Tree Definitions and Properties
+
+- Stores elements hierarchically
+##### Internal / External Nodes
+*Internal Node:* Has one or more children
+*External Node / Leaf node:* Has no children
+
+##### Edges and Paths in Trees
+*Edge:* An edge of tree $T$ is a pair of nodes ($u, v$) such that $u$ is the parent of $v$, or vice versa.
+*Path:* A path of $T$ is a sequence of nodes such that any 2 consecutive nodes in the sequence form an edge
+
+Note: Think of paths in a file system ~/Applications/SecretCryptoMiner/mine.exe
+
+Edges consist of (~/Applications, Applications/SecretCryptoMiner, Secret/CryptoMiner.exe)
+Paths consist of the same but more edges can be added.
+(e.g. ~/Application/SecretCryptoMiner)
+

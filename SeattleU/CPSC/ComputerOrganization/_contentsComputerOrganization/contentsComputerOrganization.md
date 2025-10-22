@@ -85,5 +85,6 @@
 	- [[3.1 - Introduction to Assembly Language#Example Program|Example Program]]
 	- [[3.1 - Introduction to Assembly Language#Arithmetic Instructions with Immediates|Arithmetic Instructions with Immediates]]
 - ## [[3.2 - Conditional Execution and Loops]]
+- ## [[3.3 - Variables and Memory]]
 
 

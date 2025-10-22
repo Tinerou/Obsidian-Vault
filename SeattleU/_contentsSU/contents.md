@@ -1,9 +1,9 @@
-## Classes
-### [[contentsCPSC|CPSC]]
+# Classes
+## CPSC
 -  [[contentsComputerOrganization|Computer Organization - CPSC 2500]]
 -  [[contentsDataStructures|Data Structures - CPSC 2430]]
 
-### [[contentsUCOR|UCOR]]
+## UCOR
 - [[contentsPhilosophyOfTheHumanPerson|Philosophy of the Human Person - UCOR 2500]]
 
 ## Random
