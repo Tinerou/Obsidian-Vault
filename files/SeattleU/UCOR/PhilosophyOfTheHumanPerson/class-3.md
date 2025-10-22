@@ -1,3 +1,4 @@
+#PhilOfTheHP 
 #### Hallmarks of successful scientific theories:
 - Predictive/explanatory power
 - coherence with other theories in science

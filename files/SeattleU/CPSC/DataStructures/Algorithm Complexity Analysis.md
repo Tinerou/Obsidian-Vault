@@ -1,3 +1,4 @@
+#DataStructures 
 When you write an algorithm you need to know:
 - time complexity? 
 	- time efficiency: T(n) = # of basic operations(most expensive operations)

@@ -10,7 +10,7 @@
 
 # Unit 1 - Data Representation
 
-- ## [[1.1 - Binary Numbers#1.1 - Binary Numbers|1.1 - Introduction to Data Representation]]
+- ### [[1.1 - Binary Numbers#1.1 - Binary Numbers|1.1 - Introduction to Data Representation]]
 
 	- [[1.1 - Binary Numbers#Bits and Bytes|Bits and Bytes]]	
 	- [[1.1 - Binary Numbers#Base-10 Numbers|Base-10 Numbers]]
@@ -20,8 +20,7 @@
 	- [[1.1 - Binary Numbers#Character Representation|Character Representation]]
 	- [[1.1 - Binary Numbers#Image Representation|Image Representation]]
 	- [[1.1 - Binary Numbers#Sound Representation|Sound Representation]]
-
-- ## [[1.2 - Two's Complement Integers]]
+- ### [[1.2 - Two's Complement Integers]]
 
 	- ### [[1.2 - Two's Complement Integers#Fixed Length Integers and Overflow|Fixed Length Integers and Overflow]]
 		- [[1.2 - Two's Complement Integers#Fixed Length Integers|Fixed Length Integers]]
@@ -32,8 +31,7 @@
 		- [[1.2 - Two's Complement Integers#Addition|Addition]]
 		- [[1.2 - Two's Complement Integers#Two's Complement Overflow|Two's Complement Overflow]]
 		- [[1.2 - Two's Complement Integers#Other Arithmetic Operations|Other Arithmetic Operations]]
-	
-- ## [[1.3 - Floating-Point Numbers]]
+- ### [[1.3 - Floating-Point Numbers]]
 
 	- ### [[1.3 - Floating-Point Numbers#Floating-Point Number Representation|Floating-Point Number Representation]]
 		- [[1.3 - Floating-Point Numbers#Floating-Point Numbers|Floating-Point Numbers]]
@@ -48,25 +46,24 @@
 	- ### [[1.3 - Floating-Point Numbers#Additional Arithmetic|Additional Arithmetic]]
 		- [[1.3 - Floating-Point Numbers#Floating-Point Addition|Floating-Point Addition]]
 		- [[1.3 - Floating-Point Numbers#Floating-Point Multiplication|Floating-Point Multiplication]]
-		
-- ## [[Unit 1 Extras]]
+- ### [[Unit 1 Extras]]
 	- [[Unit 1 Extras#Worksheet|Worksheet]]
 
 # Unit 2 - Digital Logic
 
-- ## [[2.1 - Logic Gates and Circuits]]
+- ### [[2.1 - Logic Gates and Circuits]]
 	- [[2.1 - Logic Gates and Circuits#Boolean Algebra|Boolean Algebra]]
 	- [[2.1 - Logic Gates and Circuits#Logic Gates|Logic Gates]]
 	- [[2.1 - Logic Gates and Circuits#Sum-of-Products Form|Sum-of-Products Form]]
 	- [[2.1 - Logic Gates and Circuits#Designing Logical Circuits|Designing Logic Circuits]]
 	- [[2.1 - Logic Gates and Circuits#Multiplexers and Decoders|Multiplexers and Decoders]]
-- ## [[2.2 - Digital Logic in CPUs]]
+- ### [[2.2 - Digital Logic in CPUs]]
 	- [[2.2 - Digital Logic in CPUs#Von Neumann Model|Von Neumann Model]]
 	- [[2.2 - Digital Logic in CPUs#Adders|Adders]]
 	- [[2.2 - Digital Logic in CPUs#Arithmetic Logic Unit (ALU)|Arithmetic Logic Unit (ALU)]]
 	- [[2.2 - Digital Logic in CPUs#Shifter|Shifter]]
 	- [[2.2 - Digital Logic in CPUs#Comparisons|Comparisons]]
-- ## [[2.3 Sequential Logic and Memory]]
+- ### [[2.3 Sequential Logic and Memory]]
 	- [[2.3 Sequential Logic and Memory#Introduction to Sequential Logic|Intro to Sequential Logic]]
 	- [[2.3 Sequential Logic and Memory#Latches and flip-flops|Latches and flip-flops]]
 	- [[2.3 Sequential Logic and Memory#Buses|Buses]]
@@ -77,14 +74,21 @@
 
 # Unit 3 - Assembly Language Part I
 
-- ## [[3.1 - Introduction to Assembly Language]]
+- ### [[3.1 - Introduction to Assembly Language]]
 	- [[3.1 - Introduction to Assembly Language#Intro|Intro]]
 	- [[3.1 - Introduction to Assembly Language#Arithmetic and Logic Instructions|Arithmetic and Logic Instructions]]
 	- [[3.1 - Introduction to Assembly Language#Input / Output Instructions|Input / Output Instructions]]
 	- [[3.1 - Introduction to Assembly Language#Ending the Program|Ending the Program]]
 	- [[3.1 - Introduction to Assembly Language#Example Program|Example Program]]
 	- [[3.1 - Introduction to Assembly Language#Arithmetic Instructions with Immediates|Arithmetic Instructions with Immediates]]
-- ## [[3.2 - Conditional Execution and Loops]]
-- ## [[3.3 - Variables and Memory]]
+- ### [[3.2 - Conditional Execution and Loops]]
+	- [[3.2 - Conditional Execution and Loops#Branches|Branches]]
+	- [[3.2 - Conditional Execution and Loops#If Statements|Loops]]
+	- [[3.2 - Conditional Execution and Loops#Loops|Loops]]
+- ### [[3.3 - Variables and Memory]]
+	- [[3.3 - Variables and Memory#Memory Instructions|Memory Instructions]]
+	- [[3.3 - Variables and Memory#Variables in Assembly Language|Variables in Assembly Language]]
+	- [[3.3 - Variables and Memory#Pointers|Pointers]]
+	- [[3.3 - Variables and Memory#Arrays|Arrays]]
 
 
