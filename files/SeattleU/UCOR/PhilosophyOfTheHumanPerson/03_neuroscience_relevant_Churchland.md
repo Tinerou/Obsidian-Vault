@@ -11,7 +11,7 @@
 
 ### Definitions:
 
-**Folk psychology:** "The study of the mid and behavior of different peoples through the analysis of the human factors involved in their cultural and technological development."
+**Folk psychology:** "The study of the mind and behavior of different peoples through the analysis of the human factors involved in their cultural and technological development."
 (Source: https://www.merriam-webster.com/dictionary/folk%20psychology)
 
 **Eliminative Materialism:** "The *radical* claim that our ordinary, common sense understanding of the mind is deeply wrong and that some or all of the mental states posited by common-sense do not actually exist and have no role to play in a mature science of the mind."

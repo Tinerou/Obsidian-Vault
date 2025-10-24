@@ -28,8 +28,8 @@ for(int i = 0; i <= n-1; i++) {
 
 $$\begin{align}
 
-\sum_{i=0}^{n-1}\sum_{i+1}^{n-1}1=\sum_{i=0}^{n-1}(n-1(-i+1)+1)=\sum_{i=0}^{n-1}(n-i+1)\\\\=\sum_{i=0}^{n-1}n-\sum_{i=0}^{n-1}i+\sum_{i=0}^{n-1}1=n^2-\frac{n-1(n-1+1)}{2}+n-1+1 \\\\
-=n^2-\frac{n^2-n}{2}+n=\frac{2n^2}{2}-\frac{n^2-n}{2}-\frac{2n}{2}\\\\=\frac{n^2-n}{2} \text{ becuase } n^2 \text{ is the highest, big-O is:}\\\\O(n^2)
+\sum_{i=0}^{n-1}\sum_{i+1}^{n-1}1=\sum_{i=0}^{n-1}(n-1+(-i+1)+1)=\sum_{i=0}^{n-1}(n-i+1)\\=\sum_{i=0}^{n-1}n-\sum_{i=0}^{n-1}i+\sum_{i=0}^{n-1}1=n^2-\frac{n-1(n-1+1)}{2}+n-1+1 \\
+=n^2-\frac{n^2-n}{2}+n=\frac{2n^2}{2}-\frac{n^2-n}{2}-\frac{2n}{2}\\=\frac{n^2-n}{2} \text{ becuase } n^2 \text{ is the highest, big-O is:}\\O(n^2)
 
 \end{align}$$
 

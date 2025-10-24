@@ -83,12 +83,13 @@
 	- [[3.1 - Introduction to Assembly Language#Arithmetic Instructions with Immediates|Arithmetic Instructions with Immediates]]
 - ### [[3.2 - Conditional Execution and Loops]]
 	- [[3.2 - Conditional Execution and Loops#Branches|Branches]]
-	- [[3.2 - Conditional Execution and Loops#If Statements|Loops]]
+	- [[3.2 - Conditional Execution and Loops#If Statements|If Statements]]
 	- [[3.2 - Conditional Execution and Loops#Loops|Loops]]
 - ### [[3.3 - Variables and Memory]]
 	- [[3.3 - Variables and Memory#Memory Instructions|Memory Instructions]]
 	- [[3.3 - Variables and Memory#Variables in Assembly Language|Variables in Assembly Language]]
 	- [[3.3 - Variables and Memory#Pointers|Pointers]]
 	- [[3.3 - Variables and Memory#Arrays|Arrays]]
+- ### [[3.4 - Machine Language and ISAs]]
 
 
