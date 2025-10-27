@@ -110,7 +110,7 @@ Current evidence of other animals' minds: No distance from their motives… driv
 Humans: Have reason
 Argues that the concept of right/morality comes more from culture
 
-### Plantiga
+### Plantinga
 Theistic beliefs are "properly basic" and thus not irrational
 vs.
 Atheist view: Religion offers an account of the world that is inferior to science and thus it's irrational to believe in theism

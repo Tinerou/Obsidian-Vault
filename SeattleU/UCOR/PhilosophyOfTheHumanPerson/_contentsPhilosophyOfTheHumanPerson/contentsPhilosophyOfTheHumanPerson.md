@@ -21,3 +21,4 @@ These notes are a mess but maybe figure out later, might just put everything in 
 ## Other
 - [[Reflection Essay Outline]]
 - [[Exam-1]]
+- [[Exam-1 Outline]]

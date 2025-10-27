@@ -79,6 +79,8 @@ Note: from now on we focus on binary tree
 Incomplete trees will waste memory
 If the tree must be incomplete a linked list may be more optimal
 
+![[Pasted image 20251024155119.png]]
+
 
 **Recursion in tree**
 ```C++
@@ -204,3 +206,6 @@ Edges consist of (~/Applications, Applications/SecretCryptoMiner, Secret/CryptoM
 Paths consist of the same but more edges can be added.
 (e.g. ~/Application/SecretCryptoMiner)
 
+*Ordered Trees:* Drawing the tree with siblings from left to right in order.
+![[Pasted image 20251024155105.png]]
+#### 7.1.2 Tree Functions

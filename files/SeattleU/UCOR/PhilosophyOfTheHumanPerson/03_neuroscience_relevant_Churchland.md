@@ -26,3 +26,6 @@ Words like "nervous breakdown", "addiction", and "hysteria" are thought of way d
 - Great examples at the top of pg. 178 or pdf_3
 
 Churchland never uses the word *eliminative materialism* because "everybody misunderstands it".
+
+## Reading
+![[Churchland2015.pdf]]
