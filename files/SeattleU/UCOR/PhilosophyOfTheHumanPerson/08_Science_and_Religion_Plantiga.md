@@ -25,7 +25,7 @@ note: most of this on pg.5
 **Methodological Naturalism (MN)** - "Science should be done, as if, in some sense, ontological naturalism were true"
 - More a "condition to science and not a statement of the universe"
 
-Science often confused with scientific secularism, Plantiga believes that this is the underlying factor that creates distrust between science and religion.
+Science often confused with scientific secularism, Plantinga believes that this is the underlying factor that creates distrust between science and religion.
 
 ### Evolution
 
@@ -39,7 +39,7 @@ Science often confused with scientific secularism, Plantiga believes that this i
 
 "What is not consistent with Christian belief, however, is the claim that this process of evolution is *unguided* - that neither God nor anyone else had a hand in guiding, directing, orchestrating, or shaping it".
 - A universe with or without design
-Plantiga argues against Dawkins argument of, evolution revealing a universe without design.
+Plantinga argues against Dawkins argument of, evolution revealing a universe without design.
 
 By using scientific secularism, Dennett and Dawkins actually are going against methodological naturalism, because they are showing their subjective beliefs. Therefore, making their claim *unscientific*.
 

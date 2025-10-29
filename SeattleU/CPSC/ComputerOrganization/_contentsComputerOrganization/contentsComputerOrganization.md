@@ -92,4 +92,9 @@
 	- [[3.3 - Variables and Memory#Arrays|Arrays]]
 - ### [[3.4 - Machine Language and ISAs]]
 
+## Unit 4 - Assembly Language Part II
 
+- ### [[4.1 - Heap Memory and Compilation Process]]
+## Other
+
+[[Exam 1 Checklist]]
