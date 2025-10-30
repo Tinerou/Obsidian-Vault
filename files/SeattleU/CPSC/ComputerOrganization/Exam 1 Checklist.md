@@ -35,8 +35,9 @@
 - [x] one-bit memory cell using D flip-flop
 
 ### Unit 3: Assembly language
-- [ ] work on pointers
-- [ ] work on bitwise operators
+- [x] work on pointers
+- [x] work on bitwise operators
+- [x] max size of imm6 and imm8
 
 
 Types of questions you may encounter:  

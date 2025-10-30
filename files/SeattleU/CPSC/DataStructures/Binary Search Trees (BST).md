@@ -204,3 +204,117 @@ int BST::successor(int key) {
 	return ans
 }
 ```
+
+### Insert a key on a BST: Algorithm
+Where should we find the right spot to insert a key $x$ on a tree??
+Ensure the BST property holds after insertion.
+
+- Follow path to the inserted key, if this key is NULL place in that position
+
+``` C++
+// Iterative
+void BST::insert(int newKey) {
+	Node* curr = root;
+	Node* parent = NULL;
+	while(curr && curr->key != newKey) {
+		if(newkey > curr->key) curr = curr->right;
+		if(newkey < curr->key) curr = curr->left;
+	}
+	// otherwise do not create (only unique keys)
+	if (curr) {
+		std::cout << "This key already exists." << '\n';
+		return;
+	}
+	Node* p = new (nothrow) Node; // new version of C++ will throw exception instead of null pointer
+	assert(p); // to check that 
+	p->key = x;
+	p->left = p->right = NULL;
+	// case: where root is empty
+	if(!parent) root = p;
+	// make a new node for each corrisponding case
+	else if (p->key < parent->key)  {
+		parent->left = p;
+	}
+	else {
+		parent->right = p;
+	}
+}
+```
+
+```C++
+// Recursive, will require us to have helper function
+private:
+// remember we want to keep the original root
+void BST::insert_helper(Node& p, int newKey) {
+	// to search for placement
+	if(!p) {
+		if(newKey == p->key) {
+			std::cout << "This node already exists." << '\n';
+		}
+		if(newKey > root->key) return insert_helper(root->right, newKey);
+		if(newKey < root->key) return insert_helper(root->left, newKey);
+	}
+	
+	Node* p = new (nothrow) Node; // new version of C++ will throw exception instead of null pointer
+	assert(p); // to check that 
+	p->key = x;
+	p->left = p->right = NULL;
+	// case: where root is empty
+	if(!parent) root = p;
+	// make a new node for each corrisponding case
+	else if (p->key < parent->key)  {
+		parent->left = p;
+	}
+	else {
+		parent->right = p;
+	}
+	
+}
+public:
+void BST::insert_helper(int newKey) {
+	Node* p = root;
+	insert_helper(root, newKey);
+	return;
+}
+```
+In class version:
+```C++
+void BST::recurs_insert_helper(BST::Node& p, int x) {
+// base case
+	if (!p) {
+		Node* q = new (nothrow) Node;
+		assert(q);
+		q->key = x;
+		q->left = q->right = NULL;
+		p = q;
+		return;
+	}
+	if (p->key == x) return;
+	// recursive step
+	if (x < p->key)
+		recurs_insert_helper(p->left, x);
+	else 
+		recurs_insert_helper(p->right, x);
+}
+public:
+void BST::recurs_insert() {
+	recurs_insert_helper(root, x);
+}
+```
+
+### Delete a key
+(remember corner case where the the node to be delete is the root)
+Case1: $x$ has no children
+- Easiest (deallocate memory)
+Case2: $x$ has one child
+- Also easy (grandparent adopts grandchild)
+Case3: $x$ has two children
+- Complicated (swap $x$ with either the predecessor or successor)
+	- This way we keep the BST properties
+Case3 can turn into case2 or case1, so start with case3
+… ***Code for this on Canvas***
+
+The issue with BST is that it is expensive to keep balanced.
+- Too strict
+Red-black trees (still a BST) solve this issue, because it does not need to stay perfectly balanced
+- STL `set` is a BST 
