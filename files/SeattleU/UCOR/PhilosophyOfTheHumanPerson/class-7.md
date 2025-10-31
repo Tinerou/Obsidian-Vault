@@ -5,7 +5,7 @@
 
 Objectifying inquiry
 (Nagel: Evidence in science always communicated with language that avoids subjective experience)
-Personification is natural but by condition should not be used in science : [[08_Science_and_Religion_Plantiga#Science and Secularism|paragraph 2]]
+Personification is natural but by condition should not be used in science : [[08_Science_and_Religion_Plantinga#Science and Secularism|paragraph 2]]
 - teleological
 - Many humans have experiences of the divine (subjective experience→so not valid for science)
 
