@@ -95,6 +95,7 @@
 ## Unit 4 - Assembly Language Part II
 
 - ### [[4.1 - Heap Memory and Compilation Process]]
+- ### [[4.2 - Introduction to Function Calls]]
 ## Other
 
 [[Exam 1 Checklist]]

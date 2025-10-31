@@ -49,7 +49,7 @@ In the real world we use variations of binary search trees
 
 ### BST vs. Binary Search
 
-|                  |         BST (balanced)          |     Binary Search     |
+|                  |        BST (*balanced*)         |     Binary Search     |
 | ---------------- |:-------------------------------:|:---------------------:|
 | Data storage     | A linked list-based binary tree | A sorted array/vector |
 | Search $T(n)$    |           $O(\log n)$           |      $O(\log n)$      |
@@ -115,8 +115,8 @@ bool isBST(Node* root, int& minv, int& maxv) {
 		&& p->key < right_min;
 }
 ```
-```
-bool is BST(Node*p, int min_v, int max_v);
+:``` 
+bool is BST(Node* p, int min_v, int max_v);
 if(!p) return true
 return isBST)p->left
 ```
@@ -185,8 +185,9 @@ BST::Node* BST::successor(Node* p) { // specify scope operator BST::Node*
 ```
 predecessor is pretty much the same thing
 
+
+If given a key (may or may not actually exist in the BST)
 ```C++
-// If given a key (may or may not actually exist in the BST)
 int BST::successor(int key) {
 	Node* curr = root;
 	int ans;
@@ -312,9 +313,96 @@ Case3: $x$ has two children
 - Complicated (swap $x$ with either the predecessor or successor)
 	- This way we keep the BST properties
 Case3 can turn into case2 or case1, so start with case3
-… ***Code for this on Canvas***
+```C++
+bool BST::remove(int x) {
+	BST::Node* parent = NULL;
+	BST::Node* curr = root;
+	while (curr && curr->key != x) {
+		parent = curr;
+		(x < curr->key) ? curr = curr->left
+			: curr = curr->right;
+	}
+	if (!curr) return false;
+	if (curr->left && curr->right) { // case 3
+		parent = curr;
+		BST::Node* succ = curr->right;
+		while (succ->left) {
+			parent = succ;
+			succ = succ->left;
+		}
+		curr->key = succ->key;
+		curr = succ;
+	}
+	BST::Node* subtree = (curr->left ? curr->left : curr->right);
+	if (!parent)
+		root = subtree;
+	else {
+		if (parent->left == curr)
+			parent->left = subtree;
+		else parent->right = subtree;
+	}
+	delete curr;
+	return true;
+}
+```
 
 The issue with BST is that it is expensive to keep balanced.
 - Too strict
 Red-black trees (still a BST) solve this issue, because it does not need to stay perfectly balanced
 - STL `set` is a BST 
+
+### In class Exercises
+
+https://leetcode.com/problems/convert-bst-to-greater-tree/?envType=problem-list-v2&envId=binary-search-tree
+
+```C++
+int BST::problem_helper(Node* p, int carry) {
+	if (!p) return 0;
+	// when finding rightmost carry will remain 0
+	int s1 = problem_helper(p->right, carry);
+	int s2 = problem_helper(p->left, carry+p->key+s1);
+	int sum = s1 + s2 + p->key;
+	p->key += s1 + carry;
+	return sum;
+}
+```
+--- 
+https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/?envType=problem-list-v2&envId=binary-search-tree
+```C++
+BST::Node* problem(int A[], int lo, int hi) {
+	// base case
+	if(lo > hi) return nullptr;
+	// recursive step
+	int mid = lo+((hi-lo)/2);
+	Node* p = new Node(A[mid], NULL, NULL);
+	assert(p);
+	p->left = problem(A, lo, mid-1);
+	p->right = problem(A, mid+1, hi);
+	return p;
+}
+
+// outside we can run
+Node* root = problem(A, 0, n-1);
+```
+
+https://leetcode.com/problems/minimum-distance-between-bst-nodes/description/?envType=problem-list-v2&envId=binary-search-tree
+
+```C++
+// We can use inorder traversal
+int BST::problem(BST::Node* p, int& pred, int& rank) {
+	if(!p) return INT_MAX; // then distance infinity
+	// left subtree
+	int d1 = problem(p->left, pred, rank);
+	// if you are not the first element
+	if (rank > 0)
+		d1 = min(d1, p->key - pred);
+	pred = p->key;
+	rank++;
+	// right subtree
+	int d2 = problem(p->right, pred, rank);
+	return min(d1, d2);
+}
+// then we can run
+int prev, rank = 0;
+int ans = problem(root, prev, rank);
+```
