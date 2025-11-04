@@ -96,6 +96,7 @@
 
 - ### [[4.1 - Heap Memory and Compilation Process]]
 - ### [[4.2 - Introduction to Function Calls]]
+- ### [[4.3]]
 ## Other
 
 [[Exam 1 Checklist]]

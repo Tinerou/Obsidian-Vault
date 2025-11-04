@@ -1,4 +1,10 @@
 
+#### Basic Template
+``` LaTeX
+\begin{align}
+place body in here
+\end{align}
+```
 #### Plain text 
 `\text{Hi, here is some math}`
 #### Relation operators
@@ -37,3 +43,7 @@ $\sum^{n-1}_{j=i}{j-i+1}$
 Displays as : $\sum^{n-1}_{j=i}{j-i+1}$
 
 Note: the sub and superscript order for the sum are interchangeable
+
+### Latex Suite Obsidian
+https://github.com/artisticat1/obsidian-latex-suite?tab=readme-ov-file#cheatsheet
+- Worth learning if you use LaTeX often in Obsidian
