@@ -19,6 +19,7 @@ These notes are a mess but maybe figure out later, might just put everything in 
 - [[07_Belief_God_Basic_Plantinga]]
 - [[08_Science_and_Religion_Plantinga]]
 - [[09_Ontology_Social_Construct_Haslanger]]
+- [[10_Intuition_Haslanger]]
 ## Other
 - [[Reflection Essay Outline]]
 - [[Exam-1]]

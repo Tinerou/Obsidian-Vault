@@ -4,8 +4,10 @@
 - [ ] Advanced Tables
 - [ ] Auto Link Title
 - [ ] Auto note mover
+- [ ] Excalidraw
 - [ ] Git (doesn't work on mobile)
 - [ ] Hider
+- [ ] Image Converter
 - [ ] Latex Suite
 - [X] Open Gate
 - [ ] Remotely Save

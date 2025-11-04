@@ -95,8 +95,16 @@
 ## Unit 4 - Assembly Language Part II
 
 - ### [[4.1 - Heap Memory and Compilation Process]]
+	- [[4.1 - Heap Memory and Compilation Process#Heap Memory|Heap Memory]]
+	- [[4.1 - Heap Memory and Compilation Process#Memory Errors|Memory Errors]]
+	- [[4.1 - Heap Memory and Compilation Process#Compilation Process|Compilation Process]] (incomplete)
 - ### [[4.2 - Introduction to Function Calls]]
-- ### [[4.3]]
+	- [[4.2 - Introduction to Function Calls#Intro (Caller/Callee)|Intro (Caller/Callee)]]
+	- [[4.2 - Introduction to Function Calls#Function Calls in Assembly|Function Calls in Assembly]]
+	- [[4.2 - Introduction to Function Calls#Stack Memory|Stack Memory]]
+- ### [[4.3 - Function Calls and the Program Stack]]
+	- [[4.3 - Function Calls and the Program Stack#Implementing Stack Memory in ANNA|Implementing Stack Memory in ANNA]]
+	- [[4.3 - Function Calls and the Program Stack#Function Call Example|Function Call Example]]
 ## Other
 
 [[Exam 1 Checklist]]
