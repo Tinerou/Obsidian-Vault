@@ -1,3 +1,5 @@
+#DataStructures 
+
 Maintenance for a *balanced* BST is not easy,
 we can use rotation,
 
@@ -46,6 +48,18 @@ Resolution techniques:
 	- Linear Probing
 	- Quadratic Probing
 	- Double Hashing
+Separate Chaining: When collision occurs add to linked list within the table
+Linear Probing: When collision occurs move to next open index
+- Linearly scan the hash table
+- Wrap around if reach end of table
+- Deletion is complicated, if something gets deleted you will have to put a "tombstone" in that missing position.
+	- Use three different states of a slot:
+		- Occupied
+		- Occupied but marked as deleted
+		- Empty
+- Main problem: Primary clustering (consecutively occupied slots)
+- To help with the issue we can use *modified* linear probing
+
 ### Hash Functions
 
 #### Uniform Hash Functions
@@ -72,9 +86,89 @@ Choosing $m$:
 #### Multiplication Method
 #### Hashing of strings
 
-**Load Factor**
+**Load Factor** $\alpha$:
+
 
 **Rehashing**
 1) Create a new table
 2) Migrate all data into the new table
 3) Delete the old table
+
+lptab.h
+```C++
+#ifndef LPTAB_H
+#define LPTAB_H
+#include <cassert>
+class LpTab {
+private:
+	enum State {EMPTY, USED, DELETED};
+	struct Entry {
+		int key;
+		State state;
+	};
+	// hashtable
+	Entry* ht; // hashtable consists of array of Entries
+	int m; // prime number
+	int n; // # of keys
+public:
+	Lptab() {
+		n = 0, m = 7;
+		ht = new Entry[m];
+		assert(ht);
+		for (int i = 0; i < m; i++)
+			ht[i].state = EMPTY;
+	}
+	~Lptab() {
+	if (ht)
+		delete[] ht;
+	}
+	bool Empty() const { return !n;}
+	bool contains(int val) const;
+	void put(int val);
+	void remove(int val);
+private:
+	// hash function
+	int hash(int k) {
+		return (2*k + 5) % m
+	}
+	void rehash(int sz);
+}
+```
+
+lptab.cpp
+```C++
+#include"lptab.h"
+#include<iostream>
+
+bool LpTab::contains(int val) const {
+	int key = hash(val);
+	// If key is not found in table wrap around until found, or table is empty.
+	while (ht[key].state == DELETED || (ht[key].state == USED && val != ht[key].key))
+		key = (key+1) % m;
+	return !(ht[key].state) == EMPTY;
+}
+
+void LpTab::put(int val) {
+	for (k = hash(val); ht[k].state == EMPTY || ht[k].state == DELETED || ht[k].key == val); k = (k+1)%m);
+	if (ht[k].state != USED)
+		n++;
+	ht[k] = val;
+	// rehash
+	if ((double)n >= 0.7*m) {
+		m 
+	}
+}
+
+void LpTab::rehash(int sz) {
+	// step 1:
+	sz = findPrime(sz); // assume we found prime num closest to sz
+	// step 2:
+	Entry* newHt = new Entry[sz];
+	assert(newHt);
+	for (int i = 0; i < sz; i++)
+		ht[i].state = EMPTY;
+	// step 3: copy keys from older table
+	swap(ht, newHt);
+	swap(m, sz);
+}
+```

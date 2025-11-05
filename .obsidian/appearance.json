@@ -4,5 +4,6 @@
   "enabledCssSnippets": [
     "auto-adaptive-images",
     "dark-pdf"
-  ]
+  ],
+  "theme": "system"
 }

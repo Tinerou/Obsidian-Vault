@@ -105,6 +105,10 @@
 - ### [[4.3 - Function Calls and the Program Stack]]
 	- [[4.3 - Function Calls and the Program Stack#Implementing Stack Memory in ANNA|Implementing Stack Memory in ANNA]]
 	- [[4.3 - Function Calls and the Program Stack#Function Call Example|Function Call Example]]
+
+## Unit 5 - Microarchitecture
+- ### [[5.1 & 5.2 Single-Cycle Datapath]]
+
 ## Other
 
 [[Exam 1 Checklist]]
