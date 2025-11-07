@@ -9,7 +9,7 @@ Not always, so we want a $O(1)$ time complexity.
 The solution to this is **hashing**.
 
 ### Why Hashing?
-![[image-9.png]]
+![[image-9.png|271x271]]
 
 |             | **Sorted List** | **Balanced BST** | **Hashing** |
 | ----------- | --------------- | ---------------- | ----------- |
