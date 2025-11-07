@@ -1,5 +1,5 @@
 
-### Maps
+## Maps
 
 A **map** stores key-value pairs $(k, v)$, which are called *entries*, where $k$ is the key and $v$ is its corresponding value.
 - The map ADT requires that each key be unique
@@ -58,7 +58,7 @@ class Map::Iterator {
 };
 ```
 
-### Hash Tables
+## Hash Tables
 
 One of the most efficient ways to implement a map is to use a hash table.
 - Usual time complexity for operations $O(1)$ with worst case $O(n)$
@@ -94,3 +94,13 @@ Hash codes vs. Hash values:
 - But there is a difference if you were to speak technically:
 	- *Hash codes:* Integer assigned to a key. 
 	- *Hash values:* Index of array $A$ (index of the hash table).
+
+We could go further into this later on… but it's mostly focused on number theory
+
+### Collision Handling Schemes
+
+#### Separate Chaining
+**Separate chaining:** Handles collisions by having each bucket ($A[i]$) store a small map ($M_i$), using a linked list.
+
+![[0904.png]]
+- Note: The hash function above would not be "good". Just used to understand how separate chaining works.

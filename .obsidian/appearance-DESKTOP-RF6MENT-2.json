@@ -1,0 +1,8 @@
+{
+  "cssTheme": "Things",
+  "accentColor": "#4c9ce6",
+  "enabledCssSnippets": [
+    "auto-adaptive-images",
+    "dark-pdf"
+  ]
+}
