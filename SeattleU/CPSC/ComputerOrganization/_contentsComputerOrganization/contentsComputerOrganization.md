@@ -68,7 +68,7 @@
 	- [[2.3 Sequential Logic and Memory#Latches and flip-flops|Latches and flip-flops]]
 	- [[2.3 Sequential Logic and Memory#Buses|Buses]]
 	- [[2.3 Sequential Logic and Memory#Memory Organization|Memory Organization]]
-- ## [[2.4 - Finite State Machines]]
+- ### [[2.4 - Finite State Machines]]
 	- [[2.4 - Finite State Machines#Finite Machines|Finite Machines]]
 	- [[2.4 - Finite State Machines#Vending Machine Example|Vending Machine Example]]
 
@@ -112,3 +112,4 @@
 ## Other
 
 [[Exam 1 Checklist]]
+[[Homework 4]]
