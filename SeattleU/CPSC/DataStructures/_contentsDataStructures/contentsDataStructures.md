@@ -7,6 +7,7 @@
 [[Trees]]
 [[Binary Search Trees (BST)]]
 [[Hashing]]
+[[Heap-Heapsort-PriorityQueue]]
 
 ## Textbook
 [[Hash Tables and Maps]]

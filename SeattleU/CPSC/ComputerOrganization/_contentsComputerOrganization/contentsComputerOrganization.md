@@ -108,6 +108,11 @@
 
 ## Unit 5 - Microarchitecture
 - ### [[5.1 & 5.2 Single-Cycle Datapath]]
+	- [[5.1 & 5.2 Single-Cycle Datapath#Introduction to Microarchitecture|Introduction to Microarchitecture]]
+	- [[5.1 & 5.2 Single-Cycle Datapath#ANNA Datapath (Compute Building Blocks)|ANNA Datapath (Compute Building Blocks)]]
+	- [[5.1 & 5.2 Single-Cycle Datapath#ANNA Control|ANNA Control]]
+- ### [[5.3 & 5.4 CPU Performance and Pipelining]]
+
 
 ## Other
 

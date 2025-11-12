@@ -1,5 +1,7 @@
 #DataStructures 
 
+### Assignment
+![[HW4.pdf]]
 ### File: **dict.h**
 ```C++
 #ifndef DICT_H
@@ -219,7 +221,7 @@ bool Dict::next(const std::string& name, std::string& next_city, std::string& ne
       }
       else curr = curr->right;
     } 
-    // case where name DNE on tree and curr->right exists
+    // case where name exists on tree and curr->right exists
     if (curr && curr->right) {
       curr = curr->right;
       // Find leftmost node on right subtree
