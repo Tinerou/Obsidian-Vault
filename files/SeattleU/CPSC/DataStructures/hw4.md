@@ -238,3 +238,120 @@ bool Dict::next(const std::string& name, std::string& next_city, std::string& ne
   return false;
 }
 ```
+
+### Recursive (insert/remove/get_population)
+
+**dict.h** (focused)
+```C++
+private:
+	bool insert_helper(Node*& curr, const std::string& city, const std::string& country, const int& population);
+	int get_population(const std::string& city, const std::string& country) const;
+private:
+	bool insert(const std::string& city, const std::string& country, const int& population);
+	int get_population_helper(Node* curr, const std::string& city, const std::string& country) const;
+```
+
+
+**dict.cpp** (focused)
+```C++
+// since we are modifying the tree we need Node*& here
+bool Dict::insert_helper(Node*& curr, const std::string& city, const std::string& country, const int& population) {
+	// base cases
+	if (!curr) {
+		Node newNode = new Node(city, country, population);
+		curr = newNode;
+		// we will increment count in insert()
+		return true;
+	}
+	if (curr->city == city && curr->country == country)
+		return false; // key already exists
+	
+	// recursive function
+	if (curr->city == city) {
+		if (country < curr->country)
+			return insert_helper(curr->left, city, country, population);
+		else
+			return insert_helper(curr->right, city, country, population);
+	}
+	else {
+		if (city < curr->city)
+			return insert_helper(curr->left, city, country, population);
+		else
+			return insert_helper(curr->right, city, country, population);
+	}
+}
+
+bool Dict::insert(const std::string& city, const std::string& country, const int& population) {
+	found = insert_helper(root, city, country, population);
+	if (found) count++;
+	return found;
+}
+
+int Dict::get_population_helper(Node* curr, const std::string& city, const std::string& country) const {
+	// base cases
+	if (!curr) return -1; // key DNE
+	if (city == curr->city && country == curr->country)
+		return curr->population;
+	// recursive function
+	if (city == curr->city)
+		if (country < curr->country)
+			return get_population_helper(curr->left, city, country);
+		else
+			return get_population_helper(curr->right, city, country);
+	else
+		if (city < curr->city)
+			return get_population_helper(curr->left, city, country);
+		else
+			return get_population_helper(curr->right, city, country);
+}
+
+int Dict::get_population(const std::string& city, const std::string& country) const {
+	return get_population_helper(root, city, country);
+}
+
+bool Dict::remove_helper(Node*& curr, const std::string& city, const std::string& country) {
+	if (!curr) return false;
+	if (curr->city == city && curr->country == country) {
+		// case 1: No children
+		if (!(curr->left) && !(curr->right)) {
+			delete curr;
+			curr = NULL;
+		}
+		// case 2: 1 child
+		else if (curr->left && !(curr->right)) {
+			Node* temp = curr;
+			curr = curr->left;
+			delete temp;
+		}
+		else if (!(curr->left) && curr->right) {
+			Node* temp = curr;
+			curr = curr->right;
+			delete temp;
+		}
+		// case 3: 2 children
+		else {
+			Node* temp = curr->right;
+			while (temp->left)
+				temp = temp->left;
+			curr->city = temp->city;
+			curr->country = temp->country;
+			curr->population = temp->population;
+			// now from right subtree remove(old succ)
+			return remove_helper(curr->right, temp->city, temp->country);
+		}
+		return true;
+	}
+	if (city == curr->city) {
+		if (country < curr->country)
+			return remove_helper(curr->left, city, country);
+		else
+			return remove_helper(curr->right, city, country);
+	}
+	else {
+		if (city < curr->city)
+			return remove_helper(curr->left, city, country);
+		else
+			return remove_helper(curr->right, city, country);
+	}
+}
+```

@@ -25,7 +25,17 @@ What is *meaning*?
 - biological appearance do not change biological qualities.
 
 
+Concepts of race and gender are *strongly pragmatically* socially constructed.
+**strongly pragmatically** → Only social forces determine those concepts (some people have strong social reason for using them). Those concepts are used to maintain social hierarchies.
 
+They're effective because both of them claim that the distinctions between genders and races are grounded "in nature". Thus, feminism aims to debunk the idea of "woman's nature".
+
+The Manifest Concept: How "Race" and "gender" are presented in our minds 
+→ Hidden motives (*bias*)
+Operative Concept: How we see these concepts operate in society
+
+*All adult humans are socially constructed:*
+All of us act according to ideas about roles (behavioral expectations, which are socially constructed).
 
 
 

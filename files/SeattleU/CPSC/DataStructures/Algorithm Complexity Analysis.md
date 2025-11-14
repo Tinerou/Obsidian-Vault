@@ -14,8 +14,7 @@ In theory, there is no upper bound but if you exceed what is actually there it i
 Note: 
 $$\begin{align}
 \sum^n_{i=m}1 = n-m+1 \\
-\sum_{i=0}^n{i}=\sum_{i=1}^n{i}=\frac{n(n+1)}{2}  \\
-\sum_{i=0}^nn=n(n+1)
+\sum_{i=0}^n{i}=\sum_{i=1}^n{i}=\frac{n(n+1)}{2}
 \end{align}$$
 Now find the Big-O notation of:
 ```C++
@@ -45,7 +44,7 @@ $=101*n$
 $=c*f(n)$
 So,
 $c*f(n) \geq T(n)$
-Therefore, $O(n) \geq T(n)$ 
+Therefore, $O(n) = T(n)$ 
 
 $T(n)=7n-2$
 $T(n) <= 7n +n$
