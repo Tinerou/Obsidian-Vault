@@ -115,7 +115,6 @@ bool isBST(Node* root, int& minv, int& maxv) {
 		&& p->key < right_min;
 }
 ```
-:``` 
 bool is BST(Node* p, int min_v, int max_v);
 if(!p) return true
 return isBST)p->left

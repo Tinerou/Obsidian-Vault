@@ -106,7 +106,7 @@ Basic operation: key comparison
 Worst case: (n-1)1
 $O(n)$
 
-$2/n, \sqrt{n}, n, \log n, n\log n, n^{1.5}, n^3/100, n^4 \log n, 2^n$
+$2/n, \log{n}, \sqrt{n}, n, n\log n, n^{1.5}, n^3/100, n^4 \log n, 2^n$
 lowest->highest
 
 Big-O for recursive Algorithms
@@ -139,3 +139,71 @@ T(2) = T(1)/2
 T(1) = T(0)/2
 $O(\log n)$
 
+```C++
+for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n; j++) {
+        // O(1) operation
+    }
+}
+```
+$$\begin{align}
+\sum^{n}_{i=0} \sum^{n}_{j=0}1 = \sum_{i=0}^{n}n = n^2 \\
+\text{Therefore, } T(n) = O(n^2)
+\end{align}$$
+```C++
+for (int i = 0; i < n; i++) {
+    for (int j = 0; j < i; j++) {
+        // O(1) operation
+    }
+}
+```
+$$\begin{align}
+\sum_{i=0}^{n} \sum_{0}^{i}1 = \sum_{i=0}^{n}i= \frac{n(n+1)}{2} = \frac{n^2+n}{2} \\
+\text{Since $n^2$ is dominant, } T(n) = O(n^2)
+\end{align}$$
+```C++
+for (int i = 1; i <= n; i *= 2) {
+    for (int j = 0; j < n; j++) {
+        // O(1) operation
+    }
+}
+```
+$$\begin{align}
+\sum_{i=1}^{\log{n}} \sum_{j=0}^{n-1}1 = \sum_{i=1}^{\log{n}}n = n\log{n} \\
+\text{Therefore, } T(n) = O(n \log n)
+\end{align}$$
+
+```C++
+for (int i = 0; i < n; i++) {
+    for (int j = 1; j <= n; j *= 2) {
+        // O(1) operation
+    }
+}
+```
+$$\begin{align}
+\sum_{i=0}^{n-1} \sum_{j=1}^{n}1 = \sum_{i=0}^{n-1}n = n*n = n^2 \\
+\text{Therefore, } T(n) = O(n^2)
+\end{align}$$
+
+```C++
+for (int i = 0; i < n; i++) {
+    for (int j = 0; j < i; j++) {
+        // O(1) operation
+    }
+}
+```
+$$\begin{align}
+\sum_{i=0}^{n-1} \sum_{j=1}^{i}1 = \sum_{i=0}^{n-1}i = \frac{(n-1)(n-1+1)}{2} = \frac{n^2-n}{2} \\
+\text{Since $n^2$ is dominant } T(n) = O(n^2)
+\end{align}$$
+```C++
+for (int i = 1; i <= n; i++) {
+    for (int j = 0; j < n - i; j++) {
+        // O(1) operation
+    }
+}
+```
+$$\begin{align}
+\sum_{i=1}^{n} \sum_{j=0}^{n-i}1 = \sum_{i=1}^{n}(n-1) = \sum_{i=1}^{n}n + \sum_{i=1}^{n}i = n^2 - \frac{n(n+1)}{2} \\ = n^2 - \frac{n^2+n}{2} = \frac{2n^2}{2}-\frac{n^2+n}{2} = \frac{2n^2-n^2-n}{2} = \frac{n^2-n}{2}\\
+\text{Since $n^2$ is dominant } T(n) = O(n^2)
+\end{align}$$

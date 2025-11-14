@@ -7,11 +7,15 @@
 [[Trees]]
 [[Binary Search Trees (BST)]]
 [[Hashing]]
-[[Heap-Heapsort-PriorityQueue]]
+
 
 ## Textbook
 [[Hash Tables and Maps]]
-# Homework
+[[Heap-Heapsort-PriorityQueue]]
+## Homework
 [[hw1]]
 [[hw2]] 
 [[hw4]]
+
+## Other
+[[Exam 2]]

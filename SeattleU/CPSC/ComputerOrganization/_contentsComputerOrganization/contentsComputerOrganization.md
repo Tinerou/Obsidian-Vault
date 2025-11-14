@@ -107,13 +107,14 @@
 	- [[4.3 - Function Calls and the Program Stack#Function Call Example|Function Call Example]]
 
 ## Unit 5 - Microarchitecture
-- ### [[5.1 & 5.2 Single-Cycle Datapath]]
-	- [[5.1 & 5.2 Single-Cycle Datapath#Introduction to Microarchitecture|Introduction to Microarchitecture]]
-	- [[5.1 & 5.2 Single-Cycle Datapath#ANNA Datapath (Compute Building Blocks)|ANNA Datapath (Compute Building Blocks)]]
-	- [[5.1 & 5.2 Single-Cycle Datapath#ANNA Control|ANNA Control]]
+- ### [[5.1 & 5.2 - Single-Cycle Datapath]]
+	- [[5.1 & 5.2 - Single-Cycle Datapath#Introduction to Microarchitecture|Introduction to Microarchitecture]]
+	- [[5.1 & 5.2 - Single-Cycle Datapath#ANNA Datapath (Compute Building Blocks)|ANNA Datapath (Compute Building Blocks)]]
+	- [[5.1 & 5.2 - Single-Cycle Datapath#ANNA Control|ANNA Control]]
 - ### [[5.3 & 5.4 CPU Performance and Pipelining]]
 
-
+## Unit 6 - Input / Output
+- ### [[6.1  - Input Output]]
 ## Other
 
 [[Exam 1 Checklist]]
