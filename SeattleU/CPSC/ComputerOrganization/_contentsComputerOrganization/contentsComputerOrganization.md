@@ -128,4 +128,5 @@
 
 [[Exam 1 Checklist]]
 [[Exam 2 Checklist]]
+[[Exam 2 Notes]]
 [[Homework 4]]

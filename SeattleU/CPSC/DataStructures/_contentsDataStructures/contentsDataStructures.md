@@ -9,6 +9,7 @@
 [[Hashing]]
 [[Heap]]
 [[PriorityQueue]]
+[[Sorting Algorithms]]
 
 
 ## Textbook

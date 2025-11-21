@@ -2,7 +2,7 @@
 
 ### Unit 4: Assembly Language Part II  
 #### Heap memory  
-- [ ] implementation in ANNA (allocation only)  
+- [ ] implementation in ANNA (allocation only)
 #### Compilation process  
 - [ ] compiler, assembler, linker
 - [ ] object file format: symbol table, external reference list, relocation records
@@ -33,7 +33,6 @@
 - [ ] Bottlenecks 
 - [ ] Improving performance: improving inefficient implementations, optimize for the common case, reduce sharing delays  
 - [ ] Amdahl's law (concept, consider percentage we are contributing to the time)
-
 ### 6 Questions Total
 2 from unit 4
 - One will be write an ANNA function (Do not have to write main)
