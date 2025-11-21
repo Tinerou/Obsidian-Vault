@@ -51,3 +51,17 @@ Node* getSuccessor(const int& x) const {
 	return parent; // Should handle case where successor is ancestor
 }
 ```
+
+```C++
+for (int i = 1; i <= n; i++) {
+	for (int k = 1; k <= i; k++) {
+		sum = k*k;
+	}
+}
+```
+ANSWER HERE IS WRONG
+$$\begin{align}
+\sum_{i=1}^{n}\sum_{k=1}^{i}1 = \sum_{i=1}^{n}n = n*n = n^2 \\
+\text{Therefore, } T(n) = O(n^2); \\
+\sum_{k=1}^{i}1 = n \text{, because $i$ occurs $n$ times}
+\end{align}$$

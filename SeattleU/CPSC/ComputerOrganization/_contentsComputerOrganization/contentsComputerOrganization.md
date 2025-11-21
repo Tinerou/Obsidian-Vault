@@ -97,10 +97,10 @@
 - ### [[4.1 - Heap Memory and Compilation Process]]
 	- [[4.1 - Heap Memory and Compilation Process#Heap Memory|Heap Memory]]
 	- [[4.1 - Heap Memory and Compilation Process#Memory Errors|Memory Errors]]
-	- [[4.1 - Heap Memory and Compilation Process#Compilation Process|Compilation Process]] (incomplete)
+	- [[4.1 - Heap Memory and Compilation Process#Compilation Process|Compilation Process]]
 - ### [[4.2 - Introduction to Function Calls]]
 	- [[4.2 - Introduction to Function Calls#Intro (Caller/Callee)|Intro (Caller/Callee)]]
-	- [[4.2 - Introduction to Function Calls#Function Calls in Assembly|Function Calls in Assembly]]
+	- [[4.2 - Introduction to Function Calls#Function Calls in Assembly (jalr)|Function Calls in Assembly (jalr)]]
 	- [[4.2 - Introduction to Function Calls#Stack Memory|Stack Memory]]
 - ### [[4.3 - Function Calls and the Program Stack]]
 	- [[4.3 - Function Calls and the Program Stack#Implementing Stack Memory in ANNA|Implementing Stack Memory in ANNA]]
@@ -112,10 +112,17 @@
 	- [[5.1 & 5.2 - Single-Cycle Datapath#ANNA Datapath (Compute Building Blocks)|ANNA Datapath (Compute Building Blocks)]]
 	- [[5.1 & 5.2 - Single-Cycle Datapath#ANNA Control|ANNA Control]]
 - ### [[5.3 & 5.4 CPU Performance and Pipelining]]
+	- [[5.3 & 5.4 CPU Performance and Pipelining#Performance (CPU Time and Single vs Multiple Cycle Datapaths)]|Performance (CPU Time and Single vs Multiple Cycle Datapaths)]]
+	- [[5.3 & 5.4 CPU Performance and Pipelining#Pipelining|Pipelining]]
+	- [[5.3 & 5.4 CPU Performance and Pipelining#Data Hazards|Data Hazards]]
+	- [[5.3 & 5.4 CPU Performance and Pipelining#Branches in Pipelines and Control Hazards|Branches in Pipelines and Control Hazards]]
+	- [[5.3 & 5.4 CPU Performance and Pipelining#Additional Performance Optimizations|Other Performance Optimizations]]
 
 ## Unit 6 - Input / Output
 - ### [[6.1  - Input Output]]
+- ### [[6.2 - Performance and Parallel Computing]]
 ## Other
 
 [[Exam 1 Checklist]]
+[[Exam 2 Checklist]]
 [[Homework 4]]

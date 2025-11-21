@@ -7,6 +7,8 @@
 [[Trees]]
 [[Binary Search Trees (BST)]]
 [[Hashing]]
+[[Heap]]
+[[PriorityQueue]]
 
 
 ## Textbook

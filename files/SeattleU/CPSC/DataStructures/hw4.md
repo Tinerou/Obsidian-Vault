@@ -355,3 +355,26 @@ bool Dict::remove_helper(Node*& curr, const std::string& city, const std::string
 	}
 }
 ```
+
+
+Alternative destructor
+```C++
+// dict.h
+public: 
+	~Dict();
+private: 
+	void destroy(Node* p);
+
+// dict.cpp
+void Dict::destroy(Node* p) {
+	if (!p) return;
+	destroy(p->left);
+	destroy(p->right);
+	delete p;
+}
+
+void Dict::~Dict() {
+	destroy(root);
+}
+
+```

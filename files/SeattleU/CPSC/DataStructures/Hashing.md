@@ -3,7 +3,7 @@
 Maintenance for a *balanced* BST is not easy,
 we can use rotation,
 
-Is $Ologn$ good enough?
+Is $O(\log n)$ good enough?
 
 Not always, so we want a $O(1)$ time complexity.
 The solution to this is **hashing**.
@@ -418,3 +418,78 @@ void LpTab::rehash(unsigned int sz) {
 Try doing the class problems while using base class before using different hashing techniques.
 
 
+Use heap to find the $k$th smallest element in a list of $N$ integers:
+Case 1: `heap.size() < k`
+- insert `A[i]` to the heap.
+Case 2: `heap.size() == k`
+1) if `A[i] < heap.top()`
+	- remove the root (since it is the largest element
+	- insert `A[i]`
+2) else, reject
+```C++
+// T(n) = O(nlogk)
+// Since we use heap of size k
+// If we use max heap, only insert up to k
+int kth_smallest(const int[] A, const int& n, const int& k) const {
+	Heap heap = new Heap(k);
+	// insert A[i] to heap
+	for (int i = 0; i < n; i++) {
+		if (heap.size() < k)
+			heap.insert(A[i]);
+		else {
+			if (A[i] < heap.top()) {
+				heap.pop();
+				heap.insert(A[i]);
+			}
+			// otherwise we do not insert into heap
+		}
+	}
+	return heap.top();
+	
+}
+```
+To do this to find k largest you can just do the size of A - k and pass that into parameters.
+
+Finding $k$th largest is the nearly the same if we use min heap:
+```C++
+int kth_largest(const int A[], const int& n, const int& k) const {
+	minHeap mHeap = new minHeap(k);
+	for (int i = 0; i < n; i++) {
+		if (heap.size() < k)
+			heap.insert(A[i]);
+		else {
+			if (A[i] > heap.top()) {
+				heap.pop();
+				heap.insert(A[i]);
+			}
+		}
+	}
+	return heap.top();
+}
+```
+order statistic tree 
+
+Heapify an array. Keep the heap in the same array.
+Take advantage of heap  properties… remember percolation, every leaf node is a subheap
+```C++
+// start from last internal node
+void heapify(int A[], int n) {
+	for (int i = (n-1-1)/2; i >= 0; i--) {
+		percolate_down(A, n, i);
+	}
+}
+```
+
+In place heap sort (instead of using another heap, more memory efficient)
+```C++
+void heapsort(int A[], int n) {
+	for (int i = (n-1-1)/2; i >= 0; i--) {
+		percolate_down(A, n, i);
+	}
+	// swap positions
+	for (int i = 1; i < n; i++) {
+		swap(A[0], A[n-i]);
+			percolate _down(A, n-i, 0);
+	}
+}
+```
