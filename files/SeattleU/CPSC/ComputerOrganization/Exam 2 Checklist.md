@@ -8,14 +8,14 @@
 - [ ] object file format: symbol table, external reference list, relocation records
 #### Function calls  
 - [ ] writing function calls  
-- [ ] writing simple complete functions  
+- [ ] writing simple complete functions
 #### Stack memory  
 - [ ] activation records  
 - [ ] stack and frame pointers  
 - [ ] calling convention  
 ### Unit 5: Microarchitecture  
 #### Single cycle datapath and control ROM  
-- [ ] Single cycle datapath and control ROM
+- [x] Single cycle datapath and control ROM
 #### Performance  
 - [ ] CPU time equation  
 - [ ] single cycle vs. multiple cycle vs. pipelining performance  
