@@ -16,7 +16,13 @@ https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols
 | $\geq$  | `\geq`  | greater than or equal to |
 | $\neq$  | `\neq`  | not equal to             |
 | $\ngeq$ | `\ngeq` | you can combine these!   |
-
+#### Dynamic Parenthesis
+- Use `\left` before left parenthesis
+- Use `\right` before right parenthesis
+- `\left(     some maths here     \right)`
+Example:
+`\left( \sum_{34}^{n*93} \frac{n}{2} \right)`
+$$\left( \sum_{34}^{n*93} \frac{n}{2}\right)$$
 #### Complement
 
 | Package   | Command           | Output          |

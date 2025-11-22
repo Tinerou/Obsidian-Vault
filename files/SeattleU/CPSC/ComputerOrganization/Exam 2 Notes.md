@@ -10,7 +10,7 @@ heapPtr: .fill &heap # points to start of heap
 heap: .fill 0
 ```
 #### Compilation process  
-- [ ] compiler, assembler, linker
+- [x] compiler, assembler, linker
 - **Compiler:** Coding language → assembly code
 	- *frontend:*
 		- Parses high level language
@@ -27,7 +27,7 @@ heap: .fill 0
 	- [[4.1 - Heap Memory and Compilation Process#**Linking Example**|Example]]
 	- [[4.1 - Heap Memory and Compilation Process#Linker|Linker]]
 
-- [ ] object file format: symbol table, external reference list, relocation records
+- [x] object file format: symbol table, external reference list, relocation records
 - **Symbol Table:** A table of `<label, address>` pairs that are visible to other object files.
 	- Only "global" labels are in the symbol table
 	- Each global name must be unique
@@ -55,10 +55,10 @@ heap: .fill 0
 
 ### Unit 5: Microarchitecture  
 #### Single cycle datapath and control ROM  
-- [ ] Single cycle datapath and control ROM
+- [x] Single cycle datapath and control ROM
 - [[5.1 & 5.2 - Single-Cycle Datapath]]
 #### Performance  
-- [ ] **CPU time equation**
+- [x] **CPU time equation**
 	- $$CPU \space Time = \frac{seconds}{program} = \frac{instructions}{program}* \frac{avg \space cycles}{instruction}* \frac{seconds}{cycle}$$
 
 		$\frac{instructions}{program}$ ← "dynamic" instruction count
@@ -67,36 +67,36 @@ heap: .fill 0
 		
 		$\frac{seconds}{cycle}$ ← Inverse of frequency
 
-- [ ] **single cycle vs. multiple cycle vs. pipelining performance**
+- [x] **single cycle vs. multiple cycle vs. pipelining performance**
 	- Slowest → Fastest:
 		- single cycle → multiple cycle → pipelining
 			- In general this is true…
-#### Pipelining  
-- [ ] **pipeline stages**
+#### Pipelining
+- [x] **pipeline stages**
 	- [[5.3 & 5.4 CPU Performance and Pipelining#5 Stages of ANNA Pipeline|5 Stages of ANNA Pipeline]]
-- [ ] **data hazards:** A hazard due to an instruction dependent on data produced by an instruction that is later in the pipeline.
+- [x] **data hazards:** A hazard due to an instruction dependent on data produced by an instruction that is later in the pipeline.
 	- [[5.3 & 5.4 CPU Performance and Pipelining#Data Hazards|Data Hazards]]
-- [ ] **control hazards:** Occurs anytime a branch or jump instruction is executed
-- [ ] **time graphs:**
+- [x] **control hazards:** Occurs anytime a branch or jump instruction is executed
+- [x] **time graphs:**
 	- Plenty of examples in: [[5.3 & 5.4 CPU Performance and Pipelining]]
 ### Unit 6: System Architecture  
 #### Input / Output  
-- [ ] **Input / Output:**
+- [x] **Input / Output:**
 	- [[6.1  - Input Output#Input / Output|Input/Output]]
 #### Interrupts  
-- [ ] **Interrupts:** A change in flow that is external to the program.
+- [x] **Interrupts:** A change in flow that is external to the program.
 	- Key difference between traps and interrupts:
 		- Traps are *synchronous*: occur at a well-defined point in the program.
 		- Interrupts are *asynchronous*: occur unexpectedly with respect to ongoing activity of the system.
 - https://www.youtube.com/watch?v=G7bqvpAw7HE (Watch up to `3:25`)
 - [[6.1  - Input Output#Interrupts|Interrupts]]
 #### Performance  
-- [ ] **Bottlenecks:** Portions of a task that slow down the task.
+- [x] **Bottlenecks:** Portions of a task that slow down the task.
 	- Performance is often dictated by bottlenecks
 	- [[6.2 - Performance and Parallel Computing#Bottlenecks|Bottlenecks]]
-- [ ] **Improving performance:** improving inefficient implementations, optimize for the common case, reduce sharing delays
+- [x] **Improving performance:** improving inefficient implementations, optimize for the common case, reduce sharing delays
 	- [[6.2 - Performance and Parallel Computing#Efficient Implementations|Efficient Implementations]]
-- [ ] Amdahl's law (concept, consider percentage we are contributing to the time)
+- [x] Amdahl's law (concept, consider percentage we are contributing to the time)
 	- Used to determine the performance gains from an optimization
 	- [[6.2 - Performance and Parallel Computing#Amdahl's Law|Amdahl's Law]]
 ### 6 Questions Total
